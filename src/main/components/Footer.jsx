@@ -1,0 +1,30 @@
+import React from "react";
+import Section from "./Section";
+
+const Footer = () => {
+  return (
+    <footer
+      className="relative flex flex-col 
+    bg-neutral-800
+    text-gray-200 mx-auto 
+    items-center
+    justify-center"
+    >
+      <div className="relative mx-auto w-full h-full ">
+        <div className="w-full h-16   bg-neutral-700/40 py-4 px-4">
+          <div className=" w-full h-full  flex justify-center">
+            <a href="/">
+              <img
+                className="w-[100%] h-[100%] object-contain"
+                src="./src/website_assets/JayDevLogo.png"
+                alt="Rebirth Logo"
+              ></img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
