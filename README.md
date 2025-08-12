@@ -1,6 +1,6 @@
 # Jay-Dev Porfolio
 
-This website is the central hub for all of my projects, blogs, and future endeavors.  
+This website is the central hub for all of my projects, blogs, and future endeavors. It’s also a great opportunity for me to refresh and strengthen my web development skills.
 While it's still in its early stages, I plan to enhance it with many new features and effects over time, while significantly improving my knowledge of JavaScript along the way. 
 
 <img width="1856" height="952" alt="image" src="https://github.com/user-attachments/assets/5c8f4c56-6831-41bb-b8ca-1b38bcda3afc" /><Br>
