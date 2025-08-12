@@ -6,3 +6,6 @@ I plan to continuously enhance it with many new features and effects, while dras
 <img width="1856" height="952" alt="image" src="https://github.com/user-attachments/assets/5c8f4c56-6831-41bb-b8ca-1b38bcda3afc" />
 
 - Check it out!
+
+# Questions or Feedback
+If you have any questions or feedback, you can contact me at jayEmissary@gmail.com
