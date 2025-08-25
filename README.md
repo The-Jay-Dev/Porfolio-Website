@@ -5,7 +5,7 @@ While it's still in its early stages, I plan to enhance it with many new feature
 
 <p align="center">
 <img width="1827" height="1052" alt="PorfolioSiteDemo" src="https://github.com/user-attachments/assets/e8cefd17-0d9b-4aca-a2d0-0c0b5f8e35e2" />
-<img align="center" width="653" height="885" alt="image" src="https://github.com/user-attachments/assets/f4baf94d-acd2-499e-9732-4095ffa0b7bc" />
+<img width="1841" height="1032" alt="PorfolioSiteDemo2" src="https://github.com/user-attachments/assets/490db4b5-2ee4-495c-9cb9-a3cc83172e4f" />
 </p>
 <Br>
 <Br>
