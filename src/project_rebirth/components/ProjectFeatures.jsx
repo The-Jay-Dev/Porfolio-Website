@@ -26,7 +26,8 @@ const Features = () => {
     setCurrentSlideIndex((currentSlideIndex) => {
       const nextIndex =
         currentSlideIndex < slides.length - 1 ? currentSlideIndex + 1 : 0;
-      setCurrentText(slideTexts[currentSlideIndex]);
+      setCurrentText(slideTexts[nextIndex]);
+      console.log(nextIndex, currentSlideIndex, slides.length);
       return nextIndex;
     });
   };
@@ -34,7 +35,7 @@ const Features = () => {
     setCurrentSlideIndex((currentSlideIndex) => {
       const nextIndex =
         currentSlideIndex > 0 ? currentSlideIndex - 1 : slides.length - 1;
-      setCurrentText(slideTexts[currentSlideIndex]);
+      setCurrentText(slideTexts[nextIndex]);
       return nextIndex;
     });
   };
