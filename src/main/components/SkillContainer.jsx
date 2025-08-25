@@ -1,14 +1,17 @@
-import React from "react";
+import { useState, React } from "react";
 
-const SkillContainer = ({ skill, percentage, containerWidth }) => {
+const SkillContainer = ({ iconClass, sourceLink }) => {
+  const [onClick, setOnClick] = useState(false);
+
   return (
-    <div className="flex justify-center gap-6 ">
-      <h1 className="text-white sm:!text-3xl lg:!text-4xl ">{skill}</h1>
-      <div
-        className={`${containerWidth} main-primary-bg-color glow-accent`}
-      ></div>
-      <h1 className="text-white sm:!text-3xl lg:!text-2xl ">{percentage}%</h1>
-    </div>
+    <button
+      onClick={() => (window.location.href = sourceLink)}
+      className="flex justify-center items-center gap-6 w-full h-full"
+    >
+      <i
+        className={`${iconClass} hover:cursor-pointer xl:text-6xl sm:text-6xl text-black hover:scale-[110%] transition`}
+      />
+    </button>
   );
 };
 

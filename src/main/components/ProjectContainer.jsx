@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../AnimationStates";
 
 const ProjectContainer = ({
   source,
@@ -7,22 +9,43 @@ const ProjectContainer = ({
   altText,
   projectTitle,
   btnUrl,
+  extraClassNames,
 }) => {
   const [onClick, setOnClick] = useState(false);
 
   return (
     <button
       onClick={() => (window.location.href = btnUrl)}
-      className="relative container row-span-2 bg-[#404040] hover:cursor-pointer hover:scale-[105%] transition hover:shadow-[0_0_20px_#ffffff] h-full w-full rounded-2xl overflow-hidden"
+      className={`${extraClassNames} relative container hover:cursor-pointer h-full w-full rounded-2xl overflow-hidden`}
     >
-      <div className="w-full h-full flex flex-col items-center justify-center">
-        <img className="h-[60%] w-full" src={source} alt={altText} />
-        <h2 className="font-medium  mt-4">{projectTitle}</h2>
-        <p className="font-medium  main-primary-color">{tag}</p>
-        <div className="h-[60%] w-full mt-6 items-center justify-center">
-          <p className="text-center font-normal">{description}</p>
+      <motion.div
+        variants={fadeIn(0.6)}
+        whileInView={"show"}
+        initial="hidden"
+        viewport={{ once: true, amount: 0 }}
+        className="w-full h-full bg-black"
+      >
+        <img
+          className="h-full w-full object-cover"
+          src={source}
+          alt={altText}
+        />
+        <div className="w-full absolute inset-0  hover:bg-black/50 bg-transparent transition opacity-90">
+          <motion.div
+            whileHover={{ opacity: 100, y: -10 }}
+            initial={{ opacity: 0, y: 40 }}
+            viewport={{ once: true, amount: 0 }}
+            className="flex flex-col justify-end items-start w-full h-full gap-2 mx-6"
+          >
+            <h3 className="!text-3xl  font-primary !font-light">
+              {projectTitle}
+            </h3>
+            <p className="text-start   font-primary !font-light  w-[40ch]">
+              {description}
+            </p>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </button>
   );
 };

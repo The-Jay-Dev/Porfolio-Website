@@ -1,27 +1,41 @@
 import React from "react";
-import Section from "./Section";
 import SkillContainer from "./SkillContainer";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../AnimationStates";
 
-const MemoryStates = () => {
+const Skills = () => {
   return (
-    <Section className="relative flex flex-col justify-center items-center gap-6  text-gray-200 mx-auto ">
-      <h1 className="text-white">Skills</h1>
-      <div className="flex flex-col gap-24 py-12 px-6 grid-rows-2 w-[60%] h-full rounded-tl-4xl">
-        <SkillContainer skill="C++" percentage={40} containerWidth="w-[40%]" />
-        <SkillContainer skill="Qt" percentage={50} containerWidth="w-[50%]" />
-        <SkillContainer
-          skill="Javascript"
-          percentage={15}
-          containerWidth="w-[15%]"
-        />
-        <SkillContainer
-          skill="Godot"
-          percentage={25}
-          containerWidth="w-[25%]"
-        />
+    <div>
+      <div className="bg-[#c0beab] h-[15vh] w-full flex justify-center">
+        <motion.div
+          variants={fadeIn(0.4, "up")}
+          whileInView={"show"}
+          initial="hidden"
+          viewport={{ once: true, amount: 0 }}
+          className="w-[50%] h-full"
+        >
+          <div className="flex justify-center items-center h-full">
+            <SkillContainer
+              sourceLink="https://isocpp.org/"
+              iconClass={"devicon-cplusplus-plain"}
+            />
+            <SkillContainer
+              sourceLink="https://www.qt.io/"
+              iconClass={"devicon-qt-original"}
+            />
+            <SkillContainer
+              sourceLink="https://godotengine.org/"
+              iconClass={"devicon-godot-plain-wordmark"}
+            />
+            <SkillContainer
+              sourceLink="https://en.wikipedia.org/wiki/JavaScript"
+              iconClass={"devicon-javascript-plain"}
+            />
+          </div>
+        </motion.div>
       </div>
-    </Section>
+    </div>
   );
 };
 
-export default MemoryStates;
+export default Skills;

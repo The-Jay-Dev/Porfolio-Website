@@ -3,56 +3,111 @@ import Section from "./Section";
 import JayDevLogo from "../../website_assets/JayDevLogo.png";
 import CallToActionButton from "./CallToActionButton";
 import SocialsGroup from "./SocialsGroup";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../AnimationStates";
 
 const Hero = () => {
+  const fadeInDelay = 0.4;
+  const fadeInModerateDelay = 1.5;
+  const fadeInLateDelay = 3;
   return (
     <div className="flex flex-col justify-center items-center ">
-      <Section className="relative container bg-neutral-800  pt-8 flex justify-center items-center">
-        <div className=" w-screen flex justify-center items-center gap-6  mx-6 ">
-          <div className="h-screen flex flex-col justify-center items-center w-1/2 gap-6 ">
-            <div className="flex flex-col items-center justify-center">
-              <h1 className="!font-bold lg:text-start md:text-center sm:text-center ">
-                <span>Welcome, I'm</span>{" "}
-                <span className="text-[#15eadc]">Jadon</span>
-              </h1>
+      <Section className="relative bg-fixed bg-[url('./src/website_assets/Desk.jpg')] bg-no-repeat bg-cover flex justify-center items-center w-screen h-screen">
+        <div className="bg-fixed h-full w-full bg-black/50 flex items-center justify-center">
+          <div className="w-full h-full container flex justify-center">
+            <div className=" lg:gap-12 w-screen flex sm:flex-col xl:flex-row justify-center items-center mx-6 ">
+              <div className="w-full flex justify-center items-center xl:hidden">
+                <img
+                  src="./src/website_assets/Selfie.png"
+                  alt="Jay Image"
+                  className="sm:w-[30%] lg:w-[20%] object-fit rounded-4xl "
+                />
+              </div>
 
-              <h2 className="!font-medium text-center">
-                A Passionate Software Developer
-              </h2>
-            </div>
+              <div className="xl:h-screen sm:h-[50vh] flex flex-col justify-center items-center w-1/2 gap-6 ">
+                <div className="flex flex-col items-center justify-center">
+                  <motion.div
+                    variants={fadeIn(fadeInDelay, "up")}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true, amount: 0.5 }}
+                  >
+                    <h1 className="font-primary mb-2 lg:!text-5xl sm:!text-4xl !font-light italic lg:text-start md:text-center sm:text-center ">
+                      <span>Welcome, I'm</span>
+                    </h1>
+                  </motion.div>
 
-            <p className=" lg:!text-[1rem] xl:!text-[1rem] mt-7 text-white/90 text-[90%] text-pretty md:max-w-[80ch] sm:max-w-[40ch] mx-auto  font-medium ">
-              I’m Jadon (Jay), a self-taught software developer who enjoys
-              transforming ideas into stunning, modern applications that blend
-              creativity with clean code. I specialize in C++ and Qt
-              development, building everything from engaging video games to
-              innovative desktop apps. Recently, I've been developing{" "}
-              <a
-                href="/projectRebirth"
-                rel="noopener noreferrer"
-                className="hover:text-purple-400 text-blue-400"
+                  <motion.div
+                    variants={fadeIn(fadeInModerateDelay, "up")}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true, amount: 0.5 }}
+                  >
+                    <h1 className="text-white font-primary lg:!text-7xl md:!text-6xl sm:!text-5xl text-center !font-semibold italic w-[20ch]">
+                      Jadon Montgomery
+                    </h1>
+                  </motion.div>
+
+                  <motion.div
+                    variants={fadeIn(fadeInModerateDelay, "up")}
+                    whileInView={"show"}
+                    initial="hidden"
+                    viewport={{ once: true, amount: 0 }}
+                  >
+                    <h2 className="text-[#7de2d1] font-primary lg:!text-3xl sm:!text-2xl !font-extralight text-center tracking-widest italic">
+                      Software Engineer
+                    </h2>
+                  </motion.div>
+                </div>
+
+                <motion.div
+                  variants={fadeIn(fadeInLateDelay)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.5 }}
+                >
+                  <p className="font-primary text-center lg:!text-[1.1rem] xl:!text-[1.1rem] mt-2 text-white/90 text-[90%] text-pretty md:max-w-[80ch] sm:max-w-[30ch] mx-auto  font-light ">
+                    A passionate software developer and youtuber, striving to
+                    grow and inspire.
+                  </p>
+                </motion.div>
+                <motion.div
+                  variants={fadeIn(fadeInLateDelay)}
+                  whileInView={"show"}
+                  initial="hidden"
+                  viewport={{ once: true, amount: 0 }}
+                >
+                  <SocialsGroup topMargin="mt-4" />
+                </motion.div>
+
+                <motion.div
+                  variants={fadeIn(fadeInLateDelay)}
+                  whileInView={"show"}
+                  initial="hidden"
+                  viewport={{ once: true, amount: 0 }}
+                >
+                  <CallToActionButton initialText="Contact Me"></CallToActionButton>
+                </motion.div>
+              </div>
+
+              <motion.div
+                variants={fadeIn(fadeInDelay, "right")}
+                whileInView={"show"}
+                initial="hidden"
+                viewport={{ once: true, amount: 0 }}
+                className="w-1/2 flex justify-center sm:hidden xl:flex "
               >
-                Rebirth
-              </a>
-              , a rhythm game build entirely with the Qt framework, fueling my
-              ever-growing passion for music and programming.
-            </p>
-
-            <SocialsGroup topMargin="mt-12" />
-
-            <CallToActionButton initialText="Contact Me"></CallToActionButton>
-          </div>
-
-          <div className="w-1/2 flex justify-center">
-            <img
-              src="./src/website_assets/PfpSquareTransparent.png"
-              alt="Jay Image"
-              className=" glow lg:w-[60%] md:w-[80%] sm:w-[70%] h-[60%] object-fit rounded-full border-4"
-            />
+                <img
+                  src="./src/website_assets/Selfie.png"
+                  alt="Jay Image"
+                  className=" lg:w-[70%] lg:h-[60%] object-fit rounded-4xl  hover:scale-[102%] transition"
+                />
+              </motion.div>
+            </div>
           </div>
         </div>
       </Section>
-      <div className="h-0.5 w-full bg-neutral-700 mb-12  "></div>
+      <div className="h-0.5 w-full bg-white  "></div>
     </div>
   );
 };

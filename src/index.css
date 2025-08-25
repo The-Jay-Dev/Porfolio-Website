@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-:root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
+@theme {
+  --font-primary: "Montserrat", "sans-serif";
 }
 
 * {
@@ -34,14 +32,9 @@ largerH1 {
 .main-cta-btn {
   @apply rounded-full font-semibold cursor-pointer tracking-wider;
 }
+
 .projects-anchor {
   !scroll-margin-top: 100px;
-}
-.main-primary-color {
-  @apply text-[#15eadc] border-[#15eadc];
-}
-.main-primary-bg-color {
-  @apply bg-[#15eadc];
 }
 
 .glow {
@@ -73,68 +66,4 @@ p {
   body {
     @apply font-sans bg-neutral-800 text-neutral-100 text-base;
   }
-}
-
-.rotate-45 {
-  @apply rotate-[45deg];
-}
-
-.rotate-90 {
-  @apply rotate-[90deg];
-}
-
-.rotate-135 {
-  @apply rotate-[135deg];
-}
-
-.rotate-180 {
-  @apply rotate-[180deg];
-}
-
-.rotate-225 {
-  @apply rotate-[225deg];
-}
-
-.rotate-270 {
-  @apply rotate-[270deg];
-}
-
-.rotate-315 {
-  @apply rotate-[315deg];
-}
-
-.rotate-360 {
-  @apply rotate-[360deg];
-}
-
-.-rotate-45 {
-  @apply rotate-[-45deg];
-}
-
-.-rotate-90 {
-  @apply rotate-[-90deg];
-}
-
-.-rotate-135 {
-  @apply rotate-[-135deg];
-}
-
-.-rotate-180 {
-  @apply rotate-[-180deg];
-}
-
-.-rotate-225 {
-  @apply rotate-[-225deg];
-}
-
-.-rotate-270 {
-  @apply rotate-[-270deg];
-}
-
-.-rotate-315 {
-  @apply rotate-[-315deg];
-}
-
-.-rotate-360 {
-  @apply rotate-[-360deg];
 }

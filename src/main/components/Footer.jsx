@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="relative mx-auto w-full h-full ">
         <div className="w-full h-16   bg-neutral-700/40 py-4 px-4">
           <div className=" w-full h-full  flex justify-center">
-            <a href="/">
+            <a href="#">
               <img
                 className="w-[100%] h-[100%] object-contain"
                 src="./src/website_assets/JayDevLogo.png"

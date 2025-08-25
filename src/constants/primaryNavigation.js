@@ -1,4 +1,4 @@
-export const navigation = [
+export const homeNavigation = [
   {
     id: 0,
     title: "Home",
@@ -13,5 +13,13 @@ export const navigation = [
     id: 2,
     title: "Contact",
     url: "/#contact",
+  },
+];
+
+export const projectNavigation = [
+  {
+    id: 0,
+    title: "Back to Porfolio",
+    url: "/#",
   },
 ];
