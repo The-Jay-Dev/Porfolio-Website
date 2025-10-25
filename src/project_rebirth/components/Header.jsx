@@ -1,5 +1,5 @@
 import RebirthIcon from "../../website_assets/Rebirth-Icon.png";
-import { projectNavigation } from "../../constants/PrimaryNavigation.js";
+import { projectNavigation } from "../../constants/primaryNavigation.js";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
 import { useState } from "react";
