@@ -1,5 +1,5 @@
 import JayDevLogo from "../../website_assets/JayDevLogo.png";
-import { homeNavigation } from "../../constants/PrimaryNavigation";
+import { homeNavigation } from "../../constants/PrimaryNavigation.js";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
 import { updateMenuIcon } from "../../constants/MenuSvg";
