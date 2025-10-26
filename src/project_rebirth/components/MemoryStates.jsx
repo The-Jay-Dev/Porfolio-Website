@@ -10,7 +10,7 @@ const MemoryStates = () => {
           <div className="flex flex-col justify-center items-center gap-6">
             <h2 className="text-black  md:!text-4xl lg:!text-2xl">Nostalgia</h2>
             <img
-              src="./src/website_assets/Nostalgia.png"
+              src="/Nostalgia.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 
@@ -24,7 +24,7 @@ const MemoryStates = () => {
           <div className="flex flex-col justify-center items-center gap-6">
             <h2 className="text-black  md:!text-4xl lg:!text-2xl">Euphoria</h2>
             <img
-              src="./src/website_assets/Euphoria.png"
+              src="/Euphoria.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 
@@ -39,7 +39,7 @@ const MemoryStates = () => {
               Bliss
             </h2>
             <img
-              src="./src/website_assets/Bliss.png"
+              src="/Bliss.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 
@@ -52,7 +52,7 @@ const MemoryStates = () => {
           <div className="flex flex-col justify-center items-center gap-6">
             <h2 className="text-black  md:!text-4xl lg:!text-2xl">Fracture</h2>
             <img
-              src="./src/website_assets/Fracture.png"
+              src="/Fracture.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 
@@ -64,7 +64,7 @@ const MemoryStates = () => {
           <div className="flex flex-col justify-center items-center gap-6">
             <h2 className="text-black  md:!text-4xl lg:!text-2xl">Paradox</h2>
             <img
-              src="./src/website_assets/Paradox.png"
+              src="/Paradox.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 
@@ -77,7 +77,7 @@ const MemoryStates = () => {
           <div className="flex flex-col justify-center items-center gap-6">
             <h2 className="text-black  md:!text-4xl lg:!text-2xl">Confusion</h2>
             <img
-              src="./src/website_assets/Confusion.png"
+              src="/Confusion.png"
               className="sm:object-fit sm:w-[50%] lg:w-[30%] xl:w-[50%]"
             ></img>
 

@@ -5,10 +5,10 @@ import { useState } from "react";
 
 const Features = () => {
   const slides = [
-    { id: 0, url: "./src/website_assets/TapNotes.png" },
-    { id: 1, url: "./src/website_assets/DoubleTapNote.png" },
-    { id: 2, url: "./src/website_assets/HoldNotes.png" },
-    { id: 3, url: "./src/website_assets/ForgottenNote.png" },
+    { id: 0, url: "/TapNotes.png" },
+    { id: 1, url: "/DoubleTapNote.png" },
+    { id: 2, url: "/HoldNotes.png" },
+    { id: 3, url: "/ForgottenNote.png" },
   ];
 
   const slideTexts = [
@@ -43,10 +43,7 @@ const Features = () => {
   return (
     <Section className="relative mx-auto flex  h-screen items-center justify-center overflow-hidden">
       <div className=" absolute  z-0 w-full h-full">
-        <img
-          src="./src/website_assets/RebirthPurityBG.png"
-          className="z-0 w-full h-full"
-        />
+        <img src="/RebirthPurityBG.png" className="z-0 w-full h-full" />
         <div className="absolute inset-0 bg-black/50" />
       </div>
 

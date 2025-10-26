@@ -25,7 +25,7 @@ const Hero = () => {
           <div className=" sm:w-[80%] lg:w-[80%] xl:w-[50%] h-full object-fit z-1 flex flex-col gap-6 justify-center items-center ">
             <img
               className="w-full h-full"
-              src="./src/website_assets/RebirthLogo.png"
+              src="/RebirthLogo.png"
               alt="Rebirth Logo"
             ></img>
           </div>
