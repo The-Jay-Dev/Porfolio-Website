@@ -26,12 +26,12 @@ const Hero = () => {
           loop
         >
           <source src="/RebirthDemo.mp4" type="video/webm" />
-          <img
-            src="/RebirthMainBG.png"
-            className="z-0 h-full  w-full"
-            alt="Rebirth Particles GIF"
-          />
         </video>
+        <img
+          src="/RebirthGameplayFallback.png"
+          className="z-0 absolute top-0 left-0 w-full h-screen object-cover hidden"
+          alt="Rebirth Particles GIF"
+        />
         <div className="w-full h-full flex flex-col justify-center items-center md: gap-24">
           <div className=" w-[90%] sm:w-[80%] lg:w-[80%] xl:w-[50%] h-full object-fit z-1 flex flex-col gap-6 justify-center items-center ">
             <img
