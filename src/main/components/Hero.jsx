@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./Section";
-import JayDevLogo from "../../website_assets/JayDevLogo.png";
 import CallToActionButton from "./CallToActionButton";
 import SocialsGroup from "./SocialsGroup";
 import { motion } from "framer-motion";
@@ -12,13 +11,13 @@ const Hero = () => {
   const fadeInLateDelay = 3;
   return (
     <div className="flex flex-col justify-center items-center ">
-      <Section className="relative bg-fixed bg-[url('./src/website_assets/Desk.jpg')] bg-no-repeat bg-cover flex justify-center items-center w-screen h-screen">
+      <Section className="relative bg-fixed bg-[url('/Desk.jpg')] bg-no-repeat bg-cover flex justify-center items-center w-screen h-screen">
         <div className="bg-fixed h-full w-full bg-black/50 flex items-center justify-center">
           <div className="w-full h-full container flex justify-center">
             <div className=" lg:gap-12 w-screen flex sm:flex-col xl:flex-row justify-center items-center mx-6 ">
               <div className="w-full flex justify-center items-center xl:hidden">
                 <img
-                  src="./src/website_assets/Selfie.png"
+                  src="/Selfie.png"
                   alt="Jay Image"
                   className="sm:w-[30%] lg:w-[20%] object-fit rounded-4xl "
                 />
@@ -98,7 +97,7 @@ const Hero = () => {
                 className="w-1/2 flex justify-center sm:hidden xl:flex "
               >
                 <img
-                  src="./src/website_assets/Selfie.png"
+                  src="/Selfie.png"
                   alt="Jay Image"
                   className=" lg:w-[70%] lg:h-[60%] object-fit rounded-4xl  hover:scale-[102%] transition"
                 />

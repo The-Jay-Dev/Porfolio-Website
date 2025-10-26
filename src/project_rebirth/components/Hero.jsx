@@ -14,12 +14,9 @@ const Hero = () => {
           muted
           loop
         >
-          <source
-            src="./src/website_assets/RebirthDemo.mp4"
-            type="video/webm"
-          />
+          <source src="/RebirthDemo.mp4" type="video/webm" />
           <img
-            src="./src/website_assets/RebirthMainBG.png"
+            src="/RebirthMainBG.png"
             className="z-0 h-full  w-full"
             alt="Rebirth Particles GIF"
           />

@@ -1,15 +1,11 @@
 import React from "react";
 import Section from "./Section";
-import RebirthBG from "../../website_assets/RebirthMainBG.png";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center h-auto w-screen">
       <Section className="relative flex w-full justify-center ">
         <div className=" absolute  z-0 h-screen w-full">
-          <img
-            src="./src/website_assets/RebirthPurityBG.png"
-            className="z-0 h-full w-full"
-          />
+          <img src="/RebirthPurityBG.png" className="z-0 h-full w-full" />
           <div className="absolute inset-0 bg-black/1" />
         </div>
 
@@ -31,7 +27,7 @@ const About = () => {
               loop
               playsInline
               muted
-              src="./src/website_assets/RebirthDemo2.mp4"
+              src="/RebirthDemo2.mp4"
               alt="Rebirth Demo Video"
               className="object-fit relative rounded-lg shadow-md md:mt-20"
             ></video>

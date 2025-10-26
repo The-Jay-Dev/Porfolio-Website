@@ -1,5 +1,4 @@
-import RebirthIcon from "../../website_assets/Rebirth-Icon.png";
-import { projectNavigation } from "../../constants/primaryNavigation.js";
+import { projectNavigation } from "../../constants/primaryNavigation";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
 import { useState } from "react";
@@ -35,7 +34,7 @@ const Header = () => {
           className="flex ease-out transition hover:scale-[110%] mx-6 w-[4rem] xl:mr-8"
           href="#"
         >
-          <img src={RebirthIcon} width={128} height={128} alt="Rebirth" />
+          <img src="/Rebirth-Icon.png" width={128} height={128} alt="Rebirth" />
         </a>
         <nav
           className={`${

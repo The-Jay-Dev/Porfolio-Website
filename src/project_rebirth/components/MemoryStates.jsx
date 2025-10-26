@@ -4,7 +4,7 @@ import Section from "./Section";
 const MemoryStates = () => {
   return (
     <div className="flex flex-col justify-center items-center h-auto w-screen">
-      <Section className="relative flex flex-col justify-center items-center gap-6 bg-[url('./src/website_assets/RebirthLifeBG.png')] bg-no-repeat bg-center bg-cover text-gray-200 mx-auto w-full ">
+      <Section className="relative flex flex-col justify-center items-center gap-6 bg-[url('/RebirthLifeBG.png')] bg-no-repeat bg-center bg-cover text-gray-200 mx-auto w-full ">
         <h1 className="mt-24  text-black">Memory States</h1>
         <div className="sm:w-[90%] md:flex md:flex-col xl:w-[90%] xl:grid xl:grid-cols-3 gap-24 py-12 px-6 grid-rows-2  h-full justify-center items-center ">
           <div className="flex flex-col justify-center items-center gap-6">

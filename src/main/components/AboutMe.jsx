@@ -7,7 +7,7 @@ import { fadeIn } from "../../AnimationStates";
 const MemoryStates = () => {
   return (
     <Section className="relative flex justify-center items-center w-screen overflow-hidden">
-      <div className="blur-2xl bg-[url('./src/website_assets/Desk.jpg')] absolute bg-no-repeat bg-cover w-full h-full" />
+      <div className="blur-2xl bg-[url('/Desk.jpg')] absolute bg-no-repeat bg-cover w-full h-full" />
       <div className="z-10 bg-fixed h-full w-full bg-[#918c7a]/80 flex items-center justify-center">
         <div className="w-full h-full container flex justify-center">
           <div className=" w-screen flex sm:flex-col md:flex-row justify-center items-center lg:gap-6 sm:gap-24 mx-6 ">
@@ -56,7 +56,7 @@ const MemoryStates = () => {
               className="w-1/2 flex justify-center sm:hidden xl:flex"
             >
               <img
-                src="./src/website_assets/Selfie2.jpg"
+                src="/Selfie2.jpg"
                 alt="Jay Image"
                 className="transition hover:scale-[102%] lg:w-[70%] md:w-full sm:w-[70%] lg:object-fit sm:object-cover rounded-4xl "
               />

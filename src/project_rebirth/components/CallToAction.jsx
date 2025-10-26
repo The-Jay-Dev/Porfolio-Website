@@ -14,12 +14,9 @@ const CallToAction = () => {
             muted
             loop
           >
-            <source
-              src="./src/website_assets/RebirthParticles.mp4"
-              type="video/webm"
-            />
+            <source src="/RebirthParticles.mp4" type="video/webm" />
             <img
-              src="./src/website_assets/RebirthParticles.gif"
+              src="/RebirthParticles.gif"
               className="z-0 h-full  w-full"
               alt="Rebirth Particles GIF"
             />

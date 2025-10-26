@@ -1,4 +1,3 @@
-import JayDevLogo from "../../website_assets/JayDevLogo.png";
 import { homeNavigation } from "../../constants/PrimaryNavigation.js";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
@@ -36,7 +35,7 @@ const Header = () => {
           className="block ease-out transition hover:scale-[110%] mx-6 w-[4rem] xl:mr-8"
           href="#"
         >
-          <img src={JayDevLogo} width={128} height={128} alt="JayDev" />
+          <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
         </a>
         <nav
           className={`${
