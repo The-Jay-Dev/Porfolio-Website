@@ -99,7 +99,7 @@ const Features = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center h-[20%]">
-          <p className="mt-12 text-[1.0rem] sm:text-[1.2rem] xl:!text-[1.2rem] w-[40ch] sm:w-[40ch] md:w-[80ch] lg:w-[80ch] xl:w-[100ch]  xl:!text-3xl py-7 text-center text-shadow-black font-medium  text-wrap break-words text-white">
+          <p className="mt-12 text-[1.0rem] sm:text-[1.2rem] xl:!text-[1.2rem] w-[30ch] sm:w-[40ch] md:w-[80ch] lg:w-[80ch] xl:w-[100ch]  xl:!text-3xl py-7 text-center text-shadow-black font-medium  text-wrap break-words text-white">
             {currentText}
           </p>
         </div>

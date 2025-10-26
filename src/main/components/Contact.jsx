@@ -9,7 +9,7 @@ const CallToAction = () => {
       className=" relative mx-auto h-96 bg-black-800 flex flex-col justify-center items-center bg-[#404040] rounded-t-4xl"
     >
       <div className="w-[80%] h-[40%] object-contain z-1 flex flex-col justify-center gap-4 items-center">
-        <div className="w-[50ch] !md:w-1/2 flex  justify-center  items-center">
+        <div className="w-[30ch] sm:w-[50ch] !md:w-1/2 flex  justify-center  items-center">
           <div className="flex flex-col justify-center items-center gap-6">
             <h1 className="text-center md:text-left !text-5xl text-white">
               Let's connect!

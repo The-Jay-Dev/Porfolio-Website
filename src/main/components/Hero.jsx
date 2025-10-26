@@ -31,7 +31,7 @@ const Hero = () => {
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.5 }}
                   >
-                    <h1 className="font-primary mb-2 lg:!text-5xl sm:!text-4xl !font-light italic lg:text-start md:text-center sm:text-center ">
+                    <h1 className="font-primary mb-2 lg:!text-5xl sm:!text-4xl !font-light italic md:text-center sm:text-center text-center w-[20ch] ">
                       <span>Welcome, I'm</span>
                     </h1>
                   </motion.div>
@@ -42,7 +42,7 @@ const Hero = () => {
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.5 }}
                   >
-                    <h1 className="text-white font-primary lg:!text-7xl md:!text-6xl sm:!text-5xl text-center !font-semibold italic w-[20ch]">
+                    <h1 className="text-white font-primary lg:!text-7xl md:!text-6xl sm:!text-5xl text-center !font-semibold italic w-[10ch] sm:w-[20ch]">
                       Jadon Montgomery
                     </h1>
                   </motion.div>

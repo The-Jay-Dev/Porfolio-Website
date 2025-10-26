@@ -19,12 +19,13 @@ const CallToAction = () => {
               src="/RebirthParticles.gif"
               className="z-0 h-full  w-full"
               alt="Rebirth Particles GIF"
+              onerror="this.onerror=null;this.src='/RebirthLifeBG.png'"
             />
           </video>
           <div className="absolute inset-0 bg-black/10" />
         </div>
         <div className="text-center w-[80%] h-[40%] object-contain z-1 flex flex-col gap-12 justify-center items-center">
-          <h1 className="lg:!text-5xl md:!text-7xl xl:!text-6xl text-shadow-lg/10 md:text-center">
+          <h1 className="lg:!text-5xl md:!text-7xl xl:!text-6xl text-shadow-lg/30 md:text-center">
             Do you have what it takes?
           </h1>
           <DownloadButton
