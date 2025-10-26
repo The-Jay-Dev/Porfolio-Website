@@ -33,7 +33,7 @@ const About = () => {
             className="sm:gap-6 lg:gap-4 mx-auto sm:w-[80%] sm:flex sm:flex-col md:justify-center md:items-center lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:container lg:w-full md:h-full lg:h-[50vh]"
           >
             <ProjectContainer
-              source="./src/website_assets/Quizzer.png"
+              source="/Quizzer.png"
               altText="Quizzer Image"
               description="A self-quizzing website produced with base JavaScript."
               projectTitle="Quizzer"
@@ -41,7 +41,7 @@ const About = () => {
             />
 
             <ProjectContainer
-              source="./src/website_assets/GodotTrajectoryLineScreen.png"
+              source="/GodotTrajectoryLineScreen.png"
               altText="Trajectory Line Project Image"
               description="A trajectory line that predicts the player's jump path."
               projectTitle="Trajectory Line Engine"
@@ -50,7 +50,7 @@ const About = () => {
 
             <ProjectContainer
               extraClassNames={"row-span-2"}
-              source="./src/website_assets/FileExplorerMainScreen.png"
+              source="/FileExplorerMainScreen.png"
               altText="File Explorer Project Image"
               description="A tool for automatic file renaming."
               projectTitle="File Sorter"
@@ -59,11 +59,11 @@ const About = () => {
 
             <ProjectContainer
               extraClassNames={"col-span-2"}
-              source="./src/website_assets/RebirthTitleScreen.png"
+              source="/RebirthTitleScreen.png"
               altText="Rebirth Title Image"
               description="An experimental rhythm game crafted with Qt and Miniaudio frameworks."
               projectTitle="Rebirth"
-              btnUrl="/projectRebirth"
+              btnUrl="projectRebirth"
             />
           </motion.div>
         </div>

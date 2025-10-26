@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="#" className="flex items-center justify-center">
               <img
                 className="w-[40%] object-fit"
-                src="./src/website_assets/RebirthLogo.png"
+                src="/RebirthLogo.png"
                 alt="Rebirth Logo"
               ></img>
             </a>
