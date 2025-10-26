@@ -17,7 +17,7 @@ const Hero = () => {
       <Section className="mt-24 relative flex w-full flex-col justify-center items-center">
         <div className="absolute inset-0 h-full bg-gradient-to-b from-[#1a1a1a]/80 to-[#3b3b3b]/80 z-1" />
 
-        <video
+        {/* <video
           id="bgVideo"
           className="z-0 absolute top-0 left-0 w-full h-screen object-cover "
           autoPlay
@@ -26,10 +26,10 @@ const Hero = () => {
           loop
         >
           <source src="/RebirthDemo.mp4" type="video/webm" />
-        </video>
+        </video> */}
         <img
           src="/RebirthGameplayFallback.png"
-          className="z-0 absolute top-0 left-0 w-full h-screen object-cover hidden"
+          className="z-0 absolute top-0 left-0 w-full h-screen object-cover"
           alt="Rebirth Particles GIF"
         />
         <div className="w-full h-full flex flex-col justify-center items-center md: gap-24">

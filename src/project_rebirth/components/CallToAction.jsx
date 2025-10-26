@@ -18,7 +18,7 @@ const CallToAction = () => {
     <div className="flex flex-col justify-center items-center h-auto w-screen">
       <Section className=" relative mx-auto bg-black-800 flex flex-col justify-center items-center w-full">
         <div className=" absolute  z-0 h-full w-full">
-          <video
+          {/* <video
             className="z-0 absolute top-0 left-0 w-full h-screen object-cover "
             autoPlay
             playinline="true"
@@ -26,10 +26,10 @@ const CallToAction = () => {
             loop
           >
             <source src="/RebirthParticles.mp4" type="video/webm" />
-          </video>
+          </video> */}
           <img
             src="/RebirthMainBG.png"
-            className="z-0 absolute top-0 left-0 w-full h-screen object-cover hidden"
+            className="z-0 absolute top-0 left-0 w-full h-screen object-cover"
             alt="Rebirth fallback img"
           />
           <div className="absolute inset-0 bg-black/10" />
