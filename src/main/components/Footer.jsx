@@ -16,8 +16,8 @@ const Footer = () => {
             <a href="#">
               <img
                 className="w-[100%] h-[100%] object-contain"
-                src="./src/website_assets/JayDevLogo.png"
-                alt="Rebirth Logo"
+                src="/JayDevLogo.png"
+                alt="Jay Dev Logo"
               ></img>
             </a>
           </div>

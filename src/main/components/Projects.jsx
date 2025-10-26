@@ -63,7 +63,7 @@ const About = () => {
               altText="Rebirth Title Image"
               description="An experimental rhythm game crafted with Qt and Miniaudio frameworks."
               projectTitle="Rebirth"
-              btnUrl="projectRebirth"
+              btnUrl="/projectRebirth"
             />
           </motion.div>
         </div>
