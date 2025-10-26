@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import Section from "./Section";
 import DownloadButton from "./DownloadButton";
 const Hero = () => {
-  useEffect(() => {
-    const rebirthVideo = document.getElementById("bgVideo");
-    const fallbackImg = document.getElementById("fallbackImg");
+  // useEffect(() => {
+  //   const rebirthVideo = document.getElementById("bgVideo");
+  //   const fallbackImg = document.getElementById("fallbackImg");
 
-    rebirthVideo.addEventListener("error", () => {
-      rebirthVideo.style.display = "none";
-      fallbackImg.classList.remove("hidden");
-    });
-  });
+  //   rebirthVideo.addEventListener("error", () => {
+  //     rebirthVideo.style.display = "none";
+  //     fallbackImg.classList.remove("hidden");
+  //   });
+  // });
 
   return (
     <div className="flex flex-col justify-center items-center h-auto w-screen">

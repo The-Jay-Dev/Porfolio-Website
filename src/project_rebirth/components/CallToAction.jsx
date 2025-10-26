@@ -3,15 +3,15 @@ import Section from "./Section";
 import DownloadButton from "./DownloadButton";
 import { useEffect } from "react";
 const CallToAction = () => {
-  useEffect(() => {
-    const rebirthVideo = document.getElementById("bgVideo");
-    const fallbackImg = document.getElementById("fallbackImg");
+  // useEffect(() => {
+  //   const rebirthVideo = document.getElementById("bgVideo");
+  //   const fallbackImg = document.getElementById("fallbackImg");
 
-    rebirthVideo.addEventListener("error", () => {
-      rebirthVideo.style.display = "none";
-      fallbackImg.classList.remove("hidden");
-    });
-  });
+  //   rebirthVideo.addEventListener("error", () => {
+  //     rebirthVideo.style.display = "none";
+  //     fallbackImg.classList.remove("hidden");
+  //   });
+  // });
 
   const [BGSrc, setBGSrc] = useState();
   return (
