@@ -7,7 +7,7 @@ const Hero = () => {
     const fallbackImg = document.getElementById("fallbackImg");
 
     rebirthVideo.addEventListener("error", () => {
-      video.style.display = "none";
+      rebirthVideo.style.display = "none";
       fallbackImg.classList.remove("hidden");
     });
   });
