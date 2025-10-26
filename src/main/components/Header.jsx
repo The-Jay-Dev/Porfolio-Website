@@ -10,12 +10,16 @@ const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
+    var openNav = false;
+
     if (openNavigation) {
+      openNav = false;
       setOpenNavigation(false);
     } else {
+      openNav = true;
       setOpenNavigation(true);
     }
-    updateMenuIcon(openNavigation);
+    updateMenuIcon(openNav);
   };
 
   const handleClick = () => {

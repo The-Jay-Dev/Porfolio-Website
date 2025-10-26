@@ -14,12 +14,12 @@ const Hero = () => {
       <Section className="relative bg-fixed bg-[url('/Desk.jpg')] bg-no-repeat bg-cover flex justify-center items-center w-screen h-screen">
         <div className="bg-fixed h-full w-full bg-black/50 flex items-center justify-center">
           <div className="w-full h-full container flex justify-center">
-            <div className=" lg:gap-12 w-screen flex sm:flex-col xl:flex-row justify-center items-center mx-6 ">
+            <div className=" lg:gap-12 w-screen flex flex-col sm:flex-col xl:flex-row justify-center items-center mx-6 ">
               <div className="w-full flex justify-center items-center xl:hidden">
                 <img
                   src="/Selfie.png"
                   alt="Jay Image"
-                  className="sm:w-[30%] lg:w-[20%] object-fit rounded-4xl "
+                  className="w-[30%] lg:w-[20%] object-fit rounded-4xl "
                 />
               </div>
 
@@ -94,7 +94,7 @@ const Hero = () => {
                 whileInView={"show"}
                 initial="hidden"
                 viewport={{ once: true, amount: 0 }}
-                className="w-1/2 flex justify-center sm:hidden xl:flex "
+                className="w-1/2 flex justify-center hidden sm:hidden xl:flex "
               >
                 <img
                   src="/Selfie.png"

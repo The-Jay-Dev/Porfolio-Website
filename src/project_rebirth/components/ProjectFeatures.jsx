@@ -47,10 +47,10 @@ const Features = () => {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative h-[80%] w-[60%] flex flex-col justify-center items-center gap-6">
+      <div className="relative h-[80%] w-[80%] md:w-[60%] flex flex-col justify-center items-center gap-6">
         <h1 className="text-white text-shadow-sm mb-10">Note Types</h1>
         <div className="flex  justify-center items-center h-fit w-full overflow-visible ">
-          <div className="sm:!w-[80%] md:w-[60%] xl:!w-[50%] aspect-[4/2] overflow-visible">
+          <div className="w-[80%] sm:!w-[80%] md:w-[60%] lg:!w-[60%] xl:!w-[50%] aspect-[4/2] overflow-visible">
             <Carousel
               className="z-2"
               slides={slides}
@@ -99,7 +99,7 @@ const Features = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center h-[20%]">
-          <p className="mt-12 sm:!text-[1.2rem] xl:!text-[1.2rem] sm:w-[40ch] lg:w-[80ch] xl:w-[100ch]  xl:!text-3xl py-7 text-center text-shadow-black font-medium  text-wrap break-words text-white">
+          <p className="mt-12 text-[1.0rem] sm:text-[1.2rem] xl:!text-[1.2rem] w-[40ch] sm:w-[40ch] md:w-[80ch] lg:w-[80ch] xl:w-[100ch]  xl:!text-3xl py-7 text-center text-shadow-black font-medium  text-wrap break-words text-white">
             {currentText}
           </p>
         </div>

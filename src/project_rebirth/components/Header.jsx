@@ -1,6 +1,7 @@
-import { projectNavigation } from "../../constants/primaryNavigation";
+import { projectNavigation } from "../../constants/PrimaryNavigation.js";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
+import { updateMenuIcon } from "../../constants/MenuSvg";
 import { useState } from "react";
 
 const Header = () => {
@@ -9,12 +10,16 @@ const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
+    var openNav = false;
+
     if (openNavigation) {
+      openNav = false;
       setOpenNavigation(false);
     } else {
+      openNav = true;
       setOpenNavigation(true);
     }
-    updateMenuIcon(openNavigation);
+    updateMenuIcon(openNav);
   };
 
   const handleClick = () => {

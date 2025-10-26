@@ -6,10 +6,10 @@ const SkillContainer = ({ iconClass, sourceLink }) => {
   return (
     <button
       onClick={() => (window.location.href = sourceLink)}
-      className="flex justify-center items-center gap-6 w-full h-full"
+      className="flex justify-center items-center w-full h-full"
     >
       <i
-        className={`${iconClass} hover:cursor-pointer xl:text-6xl sm:text-6xl text-black hover:scale-[110%] transition`}
+        className={`${iconClass} hover:cursor-pointer xl:text-6xl text-6xl text-black hover:scale-[110%] transition`}
       />
     </button>
   );

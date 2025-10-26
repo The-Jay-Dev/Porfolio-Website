@@ -18,7 +18,7 @@ const About = () => {
           viewport={{ once: true, amount: 0 }}
           className="flex flex-col justify-center items-center w-full mb-24 mt-12"
         >
-          <h1 className="md:h1 text-center font-primary sm:!text-4xl !font-light italic">
+          <h1 className="md:h1 text-center font-primary text-4xl sm:!text-4xl !font-light italic">
             What I've been working on
           </h1>
 
@@ -30,7 +30,7 @@ const About = () => {
             whileInView={"show"}
             initial="hidden"
             viewport={{ once: true, amount: 0 }}
-            className="sm:gap-6 lg:gap-4 mx-auto sm:w-[80%] sm:flex sm:flex-col md:justify-center md:items-center lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:container lg:w-full md:h-full lg:h-[50vh]"
+            className="gap-6 sm:gap-6 lg:gap-4 mx-auto w-[80%] flex flex-col sm:w-[80%] sm:flex sm:flex-col md:justify-center md:items-center lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:container lg:w-full md:h-full lg:h-[50vh]"
           >
             <ProjectContainer
               source="/Quizzer.png"

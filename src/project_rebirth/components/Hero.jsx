@@ -22,7 +22,7 @@ const Hero = () => {
           />
         </video>
         <div className="w-full h-full flex flex-col justify-center items-center md: gap-24">
-          <div className=" sm:w-[80%] lg:w-[80%] xl:w-[50%] h-full object-fit z-1 flex flex-col gap-6 justify-center items-center ">
+          <div className=" w-[80%] sm:w-[80%] lg:w-[80%] xl:w-[50%] h-full object-fit z-1 flex flex-col gap-6 justify-center items-center ">
             <img
               className="w-full h-full"
               src="/RebirthLogo.png"

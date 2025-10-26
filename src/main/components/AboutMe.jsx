@@ -29,7 +29,7 @@ const MemoryStates = () => {
                 initial="hidden"
                 viewport={{ once: true, amount: 0 }}
               >
-                <p className="sm:text-center xl:text-start font-primary italic lg:!text-[1.5rem] xl:!text-[1.2rem] mt-7  text-white/90 text-[90%] text-pretty sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
+                <p className="text-center sm:text-center xl:text-start font-primary italic lg:!text-[1.5rem] xl:!text-[1.2rem] mt-7  text-white/90 text-[100%] text-pretty w-[40ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
                   I’m Jadon (Jay), a self-taught software developer who enjoys
                   transforming ideas into stunning, modern applications that
                   blend creativity with clean code. I specialize in C++ and Qt
@@ -53,12 +53,12 @@ const MemoryStates = () => {
               whileInView={"show"}
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
-              className="w-1/2 flex justify-center sm:hidden xl:flex"
+              className="w-1/2 hidden flex justify-center sm:hidden xl:flex"
             >
               <img
                 src="/Selfie2.jpg"
                 alt="Jay Image"
-                className="transition hover:scale-[102%] lg:w-[70%] md:w-full sm:w-[70%] lg:object-fit sm:object-cover rounded-4xl "
+                className="transition hover:scale-[102%] w-[70%] lg:w-[70%] md:w-full sm:w-[70%] lg:object-fit sm:object-cover rounded-4xl "
               />
             </motion.div>
           </div>

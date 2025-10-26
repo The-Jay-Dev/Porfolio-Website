@@ -14,7 +14,7 @@ const Skills = () => {
           viewport={{ once: true, amount: 0 }}
           className="w-[50%] h-full"
         >
-          <div className="flex justify-center items-center h-full">
+          <div className="flex justify-center items-center h-full gap-7 lg:gap-0">
             <SkillContainer
               sourceLink="https://isocpp.org/"
               iconClass={"devicon-cplusplus-plain"}
