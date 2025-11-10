@@ -36,7 +36,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-center py-4">
         <a
-          className="flex ease-out transition hover:scale-[110%] mx-6 w-[4rem] xl:mr-8"
+          className="flex ease-out transition hover:scale-[110%] mx-6 w-16 xl:mr-8"
           href="#"
         >
           <img src="/Rebirth-Icon.png" width={128} height={128} alt="Rebirth" />
@@ -44,7 +44,7 @@ const Header = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[4rem] left-0 right-0 bottom-0 bg-neutral-800 lg:static lg:flex lg:mx-auto lg:bg-transparent justify-center`}
+          } fixed top-16 left-0 right-0 bottom-0 bg-neutral-800 lg:static lg:flex lg:mx-auto lg:bg-transparent justify-center`}
         >
           <div
             className={`flex ${
@@ -59,7 +59,7 @@ const Header = () => {
                 className={`  block relative font-code text-2xl uppercase
      text-neutral-100   hover:text-[#a22522]    transition-colors
       px-6 py-6 
-      md:py-8 lg:-mr-0.25 lg:text-xs
+      md:py-8 lg:-mr-px lg:text-xs
       lg:font-semibold' 
       lg:leading-5 xl:px-12
       }`}

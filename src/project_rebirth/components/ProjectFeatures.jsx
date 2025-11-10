@@ -50,7 +50,7 @@ const Features = () => {
       <div className="relative h-[80%] w-[80%] md:w-[60%] flex flex-col justify-center items-center gap-6">
         <h1 className="text-white text-shadow-sm mb-10">Note Types</h1>
         <div className="flex  justify-center items-center h-fit w-full overflow-visible ">
-          <div className="w-[80%] sm:!w-[80%] md:w-[60%] lg:!w-[60%] xl:!w-[50%] aspect-[4/2] overflow-visible">
+          <div className="w-[80%] sm:w-[80%]! md:w-[60%] lg:w-[60%]! xl:w-[50%]! aspect-4/2 overflow-visible">
             <Carousel
               className="z-2"
               slides={slides}
@@ -61,7 +61,7 @@ const Features = () => {
               <button
                 onClick={previous}
                 className="p-1 rounded-full shadow bg-black/50
-          transition hover:scale-[110%]"
+          transition scale-[80%] hover:scale-[90%] md:scale-[100%] md:hover:scale-[110%]  lg:scale-[100%] lg:hover:scale-[110%]  xl:scale-[100%] xl:hover:scale-[110%]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Features = () => {
               <button
                 onClick={next}
                 className="p-1 rounded-full shadow bg-black/50
-          transition hover:scale-[110%]"
+          transition scale-[80%] hover:scale-[90%] md:scale-[100%] md:hover:scale-[110%]  lg:scale-[100%] lg:hover:scale-[110%]  xl:scale-[100%] xl:hover:scale-[110%]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const Features = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center h-[20%]">
-          <p className="mt-12 text-[1.0rem] sm:text-[1.2rem] xl:!text-[1.2rem] w-[30ch] sm:w-[40ch] md:w-[80ch] lg:w-[80ch] xl:w-[100ch]  xl:!text-3xl py-7 text-center text-shadow-black font-medium  text-wrap break-words text-white">
+          <p className="mt-24 lg:mt-12 xl:mt-12 text-[1.0rem] sm:text-[1.2rem] xl:text-[1.2rem]! w-[30ch] sm:w-[40ch] md:w-[80ch] lg:w-[80ch] xl:w-[100ch]  xl:text-3xl! py-7 text-center text-shadow-black font-medium  text-wrap wrap-break-word text-white">
             {currentText}
           </p>
         </div>

@@ -12,7 +12,7 @@ export default function Carousel({ slides, slideIndex }) {
             <img
               src={s.url}
               key={s.id}
-              className="flex-1 aspect-[10/5] object-cover"
+              className="flex-1 aspect-10/5 object-cover"
             />
           );
         })}
