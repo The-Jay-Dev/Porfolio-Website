@@ -37,10 +37,10 @@ const ProjectContainer = ({
             viewport={{ once: true, amount: 0 }}
             className="flex flex-col justify-end items-start w-full h-full gap-2 mx-6"
           >
-            <h3 className="!text-3xl  font-primary !font-light">
+            <h3 className="text-3xl!  font-primary font-light!">
               {projectTitle}
             </h3>
-            <p className="text-start   font-primary !font-light  w-[40ch]">
+            <p className="text-start   font-primary font-light!  w-[40ch]">
               {description}
             </p>
           </motion.div>

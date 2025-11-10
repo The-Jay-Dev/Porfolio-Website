@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Section from "./Section";
 import DownloadButton from "./DownloadButton";
+import ReactPlayer from "react-player";
 const Hero = () => {
   // useEffect(() => {
   //   const rebirthVideo = document.getElementById("bgVideo");
@@ -15,23 +16,26 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center h-auto w-screen">
       <Section className="mt-24 relative flex w-full flex-col justify-center items-center">
-        <div className="absolute inset-0 h-full bg-gradient-to-b from-[#1a1a1a]/80 to-[#3b3b3b]/80 z-1" />
+        <div className="absolute inset-0 h-full bg-linear-to-b from-[#1a1a1a]/80 to-[#3b3b3b]/80 z-1" />
 
-        {/* <video
+        <ReactPlayer
           id="bgVideo"
           className="z-0 absolute top-0 left-0 w-full h-screen object-cover "
+          src="/RebirthDemo.mp4"
           autoPlay
           playinline="true"
-          muted
-          loop
-        >
-          <source src="/RebirthDemo.mp4" type="video/webm" />
-        </video> */}
-        <img
+          muted="true"
+          loop="true"
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+        ></ReactPlayer>
+        {/* <img
           src="/RebirthGameplayFallback.png"
           className="z-0 absolute top-0 left-0 w-full h-screen object-cover"
           alt="Rebirth Particles GIF"
-        />
+        /> */}
         <div className="w-full h-full flex flex-col justify-center items-center md: gap-24">
           <div className=" w-[90%] sm:w-[80%] lg:w-[80%] xl:w-[50%] h-full object-fit z-1 flex flex-col gap-6 justify-center items-center ">
             <img
