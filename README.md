@@ -9,8 +9,9 @@ While it's still in its early stages, I plan to enhance it with many new feature
 </p>
 <Br>
 <Br>
--Try it out here: https://jaydevhq.com/
--Check out the devlog: https://www.youtube.com/watch?v=nq1mfbxMvno
+
+- Try it out here: https://jaydevhq.com/
+- Check out the devlog: https://www.youtube.com/watch?v=nq1mfbxMvno
 
 
 # Languages
