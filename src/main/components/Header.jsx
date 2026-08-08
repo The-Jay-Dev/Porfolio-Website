@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
 import { updateMenuIcon } from "../../constants/MenuSvg";
 import { useState } from "react";
+import CallToAction from "./Contact.jsx";
+import CallToActionButton from "./CallToActionButton.jsx";
 
 const Header = () => {
   const pathName = useLocation();
@@ -29,14 +31,12 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50
-    border-b border-white 
-    lg:bg-neutral-800/90 ${
-      openNavigation ? "bg-neutral-800" : "bg-neutral-800/90 backdrop-blur-sm"
-    }`}
+    border-b border-white backdrop-blur-3xl
+     ${openNavigation ? "bg-neutral-800" : ""}`}
     >
-      <div className="flex items-center  py-4">
+      <div className="flex justify-center items-center  py-4">
         <a
-          className="block ease-out transition hover:scale-[110%] mx-6 w-[4rem] xl:mr-8"
+          className="block ease-out transition hover:scale-[110%] mx-6 w-[5rem] xl:mr-8"
           href="#"
         >
           <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
@@ -69,13 +69,12 @@ const Header = () => {
             ))}
           </div>
         </nav>
-        <button
-          className="ml-auto lg:hidden mx-6"
-          px="px-3"
-          onClick={toggleNavigation}
-        >
+        <button className="lg:hidden mx-6" px="px-3" onClick={toggleNavigation}>
           <MenuSvg />
         </button>
+        <div className=" mx-6 w-fit h-fit">
+          <CallToActionButton initialText="Contact Me"></CallToActionButton>
+        </div>
       </div>
 
       <div />

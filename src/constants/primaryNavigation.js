@@ -6,13 +6,13 @@ export const homeNavigation = [
   },
   {
     id: 1,
-    title: "Projects",
-    url: "/#projects",
+    title: "About",
+    url: "/#about",
   },
   {
     id: 2,
-    title: "Contact",
-    url: "/#contact",
+    title: "Projects",
+    url: "/#projects",
   },
 ];
 

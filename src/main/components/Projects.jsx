@@ -16,7 +16,7 @@ const About = () => {
           whileInView={"show"}
           initial="hidden"
           viewport={{ once: true, amount: 0 }}
-          className="flex flex-col justify-center items-center w-full mb-24 mt-12"
+          className="flex flex-col justify-center items-center w-full mb-12 mt-12"
         >
           <h1 className="md:h1 text-center font-primary text-4xl sm:!text-4xl !font-light italic">
             What I've been working on

@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @custom-variant hover (&:hover);
 
 @theme {
-  --font-primary: "Montserrat", "sans-serif";
+  --font-primary: "Source Code Pro", "sans-serif";
+}
+
+@theme {
+  --font-secondary: "Inter", "sans-serif";
 }
 
 * {
