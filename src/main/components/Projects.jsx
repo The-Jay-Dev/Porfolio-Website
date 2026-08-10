@@ -6,7 +6,10 @@ import { fadeIn } from "../../AnimationStates";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-neutral-800 ">
+    <div
+      id="projects"
+      className="flex flex-col justify-center items-center bg-neutral-800 "
+    >
       <div
         id="projects"
         className=" relative mx-auto h-auto mb-48 flex flex-col justify-center items-center"

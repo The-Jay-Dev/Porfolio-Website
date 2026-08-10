@@ -6,7 +6,10 @@ import { fadeIn } from "../../AnimationStates";
 
 const MemoryStates = () => {
   return (
-    <Section className="relative flex justify-center items-center w-screen overflow-hidden">
+    <Section
+      id="aboutMe"
+      className="relative flex justify-center items-center w-screen overflow-hidden"
+    >
       <div className="blur-2xl bg-[url('/Desk.jpg')] absolute bg-no-repeat bg-cover w-full h-full" />
       <div className="z-10 bg-fixed h-full w-full bg-[#918c7a]/80 flex items-center justify-center">
         <div className="w-full h-full container flex justify-center">

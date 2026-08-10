@@ -1,20 +1,51 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Section from "./Section";
 import CallToActionButton from "./CallToActionButton";
 import SocialsGroup from "./SocialsGroup";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
 import NavigationTracker from "./NavigationTracker";
+import { homeNavigation } from "../../constants/PrimaryNavigation";
 
 const Hero = () => {
   const fadeInDelay = 0.4;
   const fadeInModerateDelay = 1.5;
   const fadeInLateDelay = 3;
+  const [cursor, setCursor] = useState(0);
+
+  const NAVIGATION_LOCATION = homeNavigation.reduce(
+    (accumulate, destination) => ({
+      ...accumulate,
+      [destination.title]: destination.index,
+    }),
+    {},
+  );
+
+  window.addEventListener("scroll", () => {
+    const aboutSectionTop =
+      document.querySelector("#aboutMe").getBoundingClientRect().top +
+      window.scrollY;
+    const projectSectionTop =
+      document.querySelector("#projects").getBoundingClientRect().top +
+      window.scrollY;
+    console.log(window.scrollY, aboutSectionTop);
+    if (window.scrollY >= aboutSectionTop - 150) {
+      if (window.scrollY >= projectSectionTop - 150) {
+        console.log("scale");
+        setCursor(2);
+      } else {
+        console.log("scale");
+        setCursor(1);
+      }
+    } else {
+      setCursor(0);
+    }
+  });
   return (
     <div>
-      <NavigationTracker />
+      <NavigationTracker cursor={cursor} />
       <div className="flex flex-col justify-center items-center ">
-        <Section className="relative  bg-fixed bg-[url('/campus-outdoors-2026.jpg')] bg-cover flex justify-center items-center w-screen h-screen">
+        <Section className="relative bg-fixed bg-[url('/campus-outdoors-2026.jpg')] bg-cover flex justify-center items-center w-screen h-screen">
           <div className="bg-fixed h-full w-full flex items-center justify-center backdrop-blur-sm pt-20">
             <div className="w-full h-full container flex justify-center">
               <div className=" lg:gap-12 w-screen flex flex-col sm:flex-col xl:flex-row justify-center items-center mx-6 ">

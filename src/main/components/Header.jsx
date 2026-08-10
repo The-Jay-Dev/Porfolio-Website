@@ -36,7 +36,7 @@ const Header = () => {
     >
       <div className="flex justify-center items-center  py-4">
         <a
-          className="block ease-out transition hover:scale-[110%] mx-6 w-[5rem] xl:mr-8"
+          className="block ease-out transition hover:scale-[110%] mx-6 w-20 xl:mr-8"
           href="#"
         >
           <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
