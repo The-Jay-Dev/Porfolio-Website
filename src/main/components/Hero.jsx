@@ -12,6 +12,7 @@ const Hero = () => {
   const fadeInModerateDelay = 1.5;
   const fadeInLateDelay = 3;
   const [cursor, setCursor] = useState(0);
+  const navigationOffsetY = 200;
 
   const NAVIGATION_LOCATION = homeNavigation.reduce(
     (accumulate, destination) => ({
@@ -28,13 +29,11 @@ const Hero = () => {
     const projectSectionTop =
       document.querySelector("#projects").getBoundingClientRect().top +
       window.scrollY;
-    console.log(window.scrollY, aboutSectionTop);
-    if (window.scrollY >= aboutSectionTop - 150) {
-      if (window.scrollY >= projectSectionTop - 150) {
-        console.log("scale");
+
+    if (window.scrollY >= aboutSectionTop - navigationOffsetY) {
+      if (window.scrollY >= projectSectionTop - navigationOffsetY) {
         setCursor(2);
       } else {
-        console.log("scale");
         setCursor(1);
       }
     } else {
@@ -45,8 +44,8 @@ const Hero = () => {
     <div>
       <NavigationTracker cursor={cursor} />
       <div className="flex flex-col justify-center items-center ">
-        <Section className="relative bg-fixed bg-[url('/campus-outdoors-2026.jpg')] bg-cover flex justify-center items-center w-screen h-screen">
-          <div className="bg-fixed h-full w-full flex items-center justify-center backdrop-blur-sm pt-20">
+        <Section className=" flex justify-center items-center w-screen h-screen">
+          <div className="bg-fixed h-full w-full flex items-center justify-center pt-20">
             <div className="w-full h-full container flex justify-center">
               <div className=" lg:gap-12 w-screen flex flex-col sm:flex-col xl:flex-row justify-center items-center mx-6 ">
                 {/* <div className="w-full flex justify-center items-center xl:hidden">
@@ -58,14 +57,14 @@ const Hero = () => {
               </div> */}
 
                 <div className="xl:h-screen sm:h-[50vh] flex flex-col justify-center items-center w-1/2 gap-6 ">
-                  <div className="flex flex-col items-center justify-center">
+                  <div className="flex flex-col items-center justify-center gap-2">
                     <motion.div
                       variants={fadeIn(fadeInModerateDelay, "up")}
                       initial="hidden"
                       whileInView={"show"}
                       viewport={{ once: true, amount: 0.5 }}
                     >
-                      <h1 className="text-white tracking-wider font-primary lg:!text-7xl md:!text-6xl sm:!text-5xl text-center !font-black w-[10ch] sm:w-[20ch]">
+                      <h1 className="text-white tracking-wider font-primary text-7xl! lg:text-6xl! sm:!text-5xl text-center !font-black w-[10ch] sm:w-[20ch]">
                         Jadon Montgomery
                       </h1>
                     </motion.div>
@@ -127,7 +126,7 @@ const Hero = () => {
             </div>
           </div>
         </Section>
-        <div className="h-0.5 w-full bg-white  "></div>
+        {/* <div className="h-0.5 w-full bg-white  "></div> */}
       </div>
     </div>
   );

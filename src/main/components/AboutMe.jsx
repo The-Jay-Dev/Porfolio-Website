@@ -10,8 +10,8 @@ const MemoryStates = () => {
       id="aboutMe"
       className="relative flex justify-center items-center w-screen overflow-hidden"
     >
-      <div className="blur-2xl bg-[url('/Desk.jpg')] absolute bg-no-repeat bg-cover w-full h-full" />
-      <div className="z-10 bg-fixed h-full w-full bg-[#918c7a]/80 flex items-center justify-center">
+      <div className="w-full h-full" />
+      <div className="z-10 bg-fixed h-full w-full flex items-center justify-center">
         <div className="w-full h-full container flex justify-center">
           <div className=" w-screen flex sm:flex-col md:flex-row justify-center items-center lg:gap-6 sm:gap-24 mx-6 ">
             <div className="h-screen flex flex-col justify-center items-center w-1/2 gap-6 ">

@@ -30,21 +30,21 @@ const Header = () => {
   };
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50
+      className={`fixed top-0 left-0 w-full z-1
     border-b border-white backdrop-blur-3xl
      ${openNavigation ? "bg-neutral-800" : ""}`}
     >
       <div className="flex justify-center items-center  py-4">
         <a
-          className="block ease-out transition hover:scale-[110%] mx-6 w-20 xl:mr-8"
+          className="block ease-out transition hover:scale-[110%] mx-6 w-[10%] lg:w-[4%] xl:mr-8"
           href="#"
         >
           <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
         </a>
         <nav
           className={`${
-            openNavigation ? "flex" : "hidden"
-          } fixed top-[4rem] left-0 right-0 bottom-0 bg-neutral-800 lg:static lg:flex lg:mx-auto lg:bg-transparent justify-center`}
+            openNavigation ? "hidden" : "flex"
+          } hidden fixed top-[4rem] left-0 right-0 bottom-0 bg-neutral-800 lg:static md:flex lg:mx-auto lg:bg-transparent justify-center`}
         >
           <div
             className={`flex ${
@@ -56,7 +56,7 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`  block relative font-code text-2xl uppercase
+                className={`  block relative font-code lg:text-xs uppercase
      text-neutral-100  hover:text-[#a22522]  transition-colors
       px-6 py-6 
       md:py-8 lg:-mr-0.25 lg:text-xs

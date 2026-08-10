@@ -6,7 +6,7 @@ const CallToActionButton = ({ initialText }) => {
 
   return (
     <button
-      className={textSelect}
+      className={`${textSelect} hidden lg:flex`}
       onClick={() => {
         setBtnText("jayemissary@gmail.com");
         setTextSelect("select-all");

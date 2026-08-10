@@ -13,12 +13,16 @@ const App = () => {
     <>
       <div className="overflow-hidden">
         <Header />
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
+        <div className="bg-fixed bg-[url('/campus-outdoors-2026.jpg')] bg-cover ">
+          <div className="backdrop-blur-sm">
+            <Hero />
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
+          </div>
+        </div>
       </div>
     </>
   );
