@@ -6,7 +6,7 @@ import { fadeIn } from "../../AnimationStates";
 const Skills = () => {
   return (
     <div>
-      <div className="bg-[#c0beab] h-[15vh] w-full flex justify-center">
+      <div className="bg-transparent border-t-4 border-b-4 h-[15vh] w-full flex justify-center">
         <motion.div
           variants={fadeIn(0.4, "up")}
           whileInView={"show"}

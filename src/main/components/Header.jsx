@@ -30,13 +30,13 @@ const Header = () => {
   };
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-1
+      className={`fixed font-primary top-0 left-0 w-full z-1
     border-b border-white backdrop-blur-3xl
      ${openNavigation ? "bg-neutral-800" : ""}`}
     >
-      <div className="flex justify-center items-center  py-4">
+      <div className="flex justify-center items-center  py-8">
         <a
-          className="block ease-out transition hover:scale-[110%] mx-6 w-[10%] lg:w-[4%] xl:mr-8"
+          className="block ease-out transition hover:scale-[110%] mx-6 w-[10%] lg:w-[7%] xl:mr-8"
           href="#"
         >
           <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
@@ -56,10 +56,10 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`  block relative font-code lg:text-xs uppercase
+                className={`  block relative font-code lg:text-[1.2rem] uppercase
      text-neutral-100  hover:text-[#a22522]  transition-colors
       px-6 py-6 
-      md:py-8 lg:-mr-0.25 lg:text-xs
+      md:py-8 lg:-mr-0.25
       lg:font-semibold' 
       lg:leading-5 xl:px-12
       }`}

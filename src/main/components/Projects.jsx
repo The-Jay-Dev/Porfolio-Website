@@ -19,7 +19,7 @@ const About = () => {
           className="flex flex-col justify-center items-center w-full mb-12 mt-12"
         >
           <h1 className="md:h1 text-center font-primary text-4xl sm:!text-4xl !font-light italic">
-            What I've been working on
+            What I've been working on lately
           </h1>
 
           <div className="w-[80%] h-0.5 bg-gradient-to-r from-transparent via-white to-transparent" />

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
 import NavigationTracker from "./NavigationTracker";
 import { homeNavigation } from "../../constants/PrimaryNavigation";
+import InfoPopup from "./InfoPopup";
 
 const Hero = () => {
   const fadeInDelay = 0.4;
@@ -41,7 +42,10 @@ const Hero = () => {
     }
   });
   return (
-    <div>
+    <div className="relative">
+      <div className="w-fit h-fit">
+        <InfoPopup />
+      </div>
       <NavigationTracker cursor={cursor} />
       <div className="flex flex-col justify-center items-center ">
         <Section className=" flex justify-center items-center w-screen h-screen">
@@ -64,7 +68,7 @@ const Hero = () => {
                       whileInView={"show"}
                       viewport={{ once: true, amount: 0.5 }}
                     >
-                      <h1 className="text-white tracking-wider font-primary text-7xl! lg:text-6xl! sm:!text-5xl text-center !font-black w-[10ch] sm:w-[20ch]">
+                      <h1 className="text-white tracking-wider font-primary text-7xl! lg:text-8xl! sm:text-5xl! text-center !font-black w-[10ch] sm:w-[20ch]">
                         Jadon Montgomery
                       </h1>
                     </motion.div>
@@ -75,7 +79,7 @@ const Hero = () => {
                       initial="hidden"
                       viewport={{ once: true, amount: 0 }}
                     >
-                      <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3xl! sm:text-[1.6rem]! font-extralight! text-center">
+                      <h2 className="text-white tracking-[0.2em]! font-primary lg:text-5xl! sm:text-[1.6rem]! font-extralight! text-center">
                         Full-Stack Developer
                       </h2>
                     </motion.div>
