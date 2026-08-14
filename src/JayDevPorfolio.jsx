@@ -13,7 +13,7 @@ const App = () => {
     <>
       <div className="overflow-hidden">
         <Header />
-        <div className=" relative bg-fixed -z-5 bg-[url('/campus-outdoors-2026.jpg')] bg-cover ">
+        <div className=" relative bg-fixed flex-col justify-center -z-5 bg-[url('/campus-outdoors-2026.jpg')] bg-cover ">
           <div className="fixed -z-10 inset-0 backdrop-blur-sm" />
           <Hero />
           <AboutMe />
