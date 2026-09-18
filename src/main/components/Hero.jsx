@@ -13,7 +13,7 @@ const Hero = () => {
   const fadeInModerateDelay = 1.5;
   const fadeInLateDelay = 3;
   const [cursor, setCursor] = useState(0);
-  const navigationOffsetY = 200;
+  const navigationOffsetY = 600;
 
   const NAVIGATION_LOCATION = homeNavigation.reduce(
     (accumulate, destination) => ({
@@ -23,19 +23,30 @@ const Hero = () => {
     {},
   );
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener("wheel", () => {
     const aboutSectionTop =
       document.querySelector("#aboutMe").getBoundingClientRect().top +
       window.scrollY;
     const projectSectionTop =
       document.querySelector("#projects").getBoundingClientRect().top +
       window.scrollY;
+    const skillsSectionTop =
+      document.querySelector("#skills").getBoundingClientRect().top +
+      window.scrollY;
+    console.log(
+      skillsSectionTop - navigationOffsetY * 3,
+      window.scrollY,
+      cursor,
+      window.scrollY >= skillsSectionTop - navigationOffsetY * 3,
+    );
 
-    if (window.scrollY >= aboutSectionTop - navigationOffsetY) {
-      if (window.scrollY >= projectSectionTop - navigationOffsetY) {
+    if (window.scrollY >= projectSectionTop - navigationOffsetY) {
+      setCursor(1);
+      if (window.scrollY >= aboutSectionTop - navigationOffsetY) {
         setCursor(2);
-      } else {
-        setCursor(1);
+      }
+      if (window.scrollY >= skillsSectionTop - navigationOffsetY) {
+        setCursor(3);
       }
     } else {
       setCursor(0);
@@ -55,7 +66,7 @@ const Hero = () => {
 
       <div className="flex flex-col justify-center items-center z-5">
         <Section className=" flex justify-center items-center w-screen h-screen">
-          <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-black/70 via-black/30 to-black" />
+          <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-home-bg-primary/70 via-home-bg-primary/30 to-home-bg-primary" />
           <div className="absolute bottom-0 mb-12 flex w-[90%] h-2/12  items-center">
             <InfoPopup />
             <div className="w-2/4 h-full" />

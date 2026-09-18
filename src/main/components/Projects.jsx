@@ -6,14 +6,17 @@ import { fadeIn } from "../../AnimationStates";
 import BioWindow from "./BioWindow";
 import { div } from "framer-motion/client";
 
-const About = () => {
+const Projects = () => {
   return (
-    <div className="flex h-screen justify-center ">
-      <h1 className="absolute left-[10%] mt-16 text-start tracking-wider font-primary text-9xl sm:text-4xl! font-black! z-10">
+    <div
+      id="projects"
+      className="flex h-screen justify-center pt-16 bg-home-bg-primary bg-cover"
+    >
+      <h1 className="text-home-text-primary absolute left-[10%] mt-16 text-start tracking-wider font-secondary text-5xl font-bold! z-10">
         What I've been working on lately...
       </h1>
-      <div className="absolute  bg-fixed flex-col justify-center w-full h-full bg-[#1b2431] bg-cover " />
-      <h1 className="absolute right-0 text-[18rem]! text-[#26303c]/80!">
+      <div className="absolute  bg-fixed flex-col justify-center w-full h-full  " />
+      <h1 className="absolute right-0 text-[18rem]! text-home-bg-secondary/80!">
         PROJECTS
       </h1>
 
@@ -72,4 +75,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;

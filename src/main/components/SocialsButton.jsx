@@ -6,7 +6,7 @@ const SocialsButton = ({ btnXMLNS, btnHref, btnD }) => {
       <a
         href={btnHref}
         className={
-          "py-2 px-2 ease-in-out hover:scale-[110%]  inline-block relative main-socials-btn text-white hover:bg-white hover:text-[#a22522] transition  border-primary border-2 z-3 "
+          "py-2 px-2 ease-in-out hover:scale-[110%]  inline-block relative main-socials-btn text-white hover:bg-white hover:text-home-accent-primary transition  border-primary border-2 z-3 "
         }
       >
         <svg

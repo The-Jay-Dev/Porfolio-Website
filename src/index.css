@@ -65,6 +65,10 @@ p {
 
 @theme {
   --color-purity: #fdfdfd;
+  --color-home-bg-primary: #110e17;
+  --color-home-bg-secondary: #1d1828;
+  --color-home-text-primary: #a59eb4;
+  --color-home-accent-primary: #9f6bff;
 }
 
 @layer base {

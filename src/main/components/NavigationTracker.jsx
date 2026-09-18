@@ -15,7 +15,7 @@ const NavigationTracker = ({ cursor }) => {
             return (
               <div className="ml-1 flex items-center justify-center w-full h-full ">
                 <p
-                  className={`transition-transform ease-in-out duration-200 lg:text-[0.2rem] ${cursor === id ? "scale-[120%]" : ""}`}
+                  className={`transition-transform ease-in-out duration-200 lg:text-[0.2rem] ${cursor === id ? "scale-[130%] text-home-accent-primary" : ""}`}
                   id={id}
                 >
                   {item.title}

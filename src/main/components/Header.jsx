@@ -30,8 +30,8 @@ const Header = () => {
   };
   return (
     <div
-      className={`fixed font-primary top-0 left-0 w-full z-5
-     border-white
+      className={`fixed font-primary top-0 left-0 w-full z-50
+    border-b border-white backdrop-blur-3xl
      ${openNavigation ? "bg-neutral-800" : ""}`}
     >
       <div className="flex justify-center items-center  py-8">
@@ -57,7 +57,7 @@ const Header = () => {
                 href={item.url}
                 onClick={handleClick}
                 className={`  block relative font-code lg:text-[1.2rem] uppercase
-     text-neutral-100  hover:text-[#a22522]  transition-colors
+     text-neutral-100  hover:text-home-accent-primary  transition-colors
       px-6 py-6 
       md:py-8 lg:-mr-0.25
       lg:font-semibold' 
@@ -73,7 +73,7 @@ const Header = () => {
           <MenuSvg />
         </button>
         <div className=" mx-6 w-fit h-fit">
-          <CallToActionButton initialText="Contact Me"></CallToActionButton>
+          <CallToActionButton initialText="Contact"></CallToActionButton>
         </div>
       </div>
 

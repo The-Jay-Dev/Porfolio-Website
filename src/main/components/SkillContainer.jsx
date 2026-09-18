@@ -10,7 +10,7 @@ const SkillContainer = ({ iconClass, sourceLink }) => {
       className="flex justify-center items-center w-full h-full "
     >
       <i
-        className={`${iconClass} hover:cursor-pointer xl:text-6xl p-7 border-2 text-6xl text-white hover:scale-[110%] transition`}
+        className={`${iconClass} hover:cursor-pointer hover:text-home-accent-primary xl:text-6xl p-7 border-2 text-6xl rounded-3xl! text-white hover:scale-[110%] transition`}
       />
     </button>
   );

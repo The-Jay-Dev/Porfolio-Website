@@ -8,14 +8,14 @@ const CallToActionButton = ({ initialText }) => {
     <button
       className={`${textSelect} hidden lg:flex`}
       onClick={() => {
-        setBtnText("jayemissary@gmail.com");
+        setBtnText("jaydevhq@gmail.com");
         setTextSelect("select-all");
       }}
     >
       <a
         target="_self"
         href="mailto:jayemissary@gmail.com"
-        className="text-md main-cta-btn border-white border-2 ease-out  hover:scale-[105%] hover:shadow-[0_0_20px_#a22522] py-4 px-6 inline-block relative  hover:bg-white hover:!text-[#a22522] transition z-3 "
+        className="text-md main-cta-btn border-white border-2 ease-out  hover:scale-[105%] hover:shadow-[0_0_20px_#7c3fff] py-4 px-6 inline-block relative  hover:bg-white hover:!text-home-accent-primary transition z-3 "
       >
         {btnText}
       </a>
