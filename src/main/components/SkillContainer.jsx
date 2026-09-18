@@ -4,12 +4,13 @@ const SkillContainer = ({ iconClass, sourceLink }) => {
   const [onClick, setOnClick] = useState(false);
 
   return (
+    //Make these draggable within the section (website within the website)
     <button
       onClick={() => (window.location.href = sourceLink)}
-      className="flex justify-center items-center w-full h-full"
+      className="flex justify-center items-center w-full h-full "
     >
       <i
-        className={`${iconClass} hover:cursor-pointer xl:text-6xl text-6xl text-white hover:scale-[110%] transition`}
+        className={`${iconClass} hover:cursor-pointer xl:text-6xl p-7 border-2 text-6xl text-white hover:scale-[110%] transition`}
       />
     </button>
   );

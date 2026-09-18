@@ -43,12 +43,55 @@ const Hero = () => {
   });
   return (
     <div className="relative">
-      <div className="w-fit h-fit">
-        <InfoPopup />
-      </div>
-      <NavigationTracker cursor={cursor} />
-      <div className="flex flex-col justify-center items-center ">
+      <video
+        autoPlay
+        loop
+        playsInline
+        muted
+        className="object-cover w-full h-full absolute z-0"
+        src="/JDevHomePreview.mp4"
+      />
+      <NavigationTracker cursor={cursor} className="z-5" />
+
+      <div className="flex flex-col justify-center items-center z-5">
         <Section className=" flex justify-center items-center w-screen h-screen">
+          <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-black/70 via-black/30 to-black" />
+          <div className="absolute bottom-0 mb-12 flex w-[90%] h-2/12  items-center">
+            <InfoPopup />
+            <div className="w-2/4 h-full" />
+            <div className="xl:h-screen sm:h-[50vh] z-1 mr-24 flex flex-col justify-center items-center w-1/2 gap-6 ">
+              <div className="flex flex-col items-center justify-center gap-2">
+                <motion.div
+                  variants={fadeIn(fadeInModerateDelay, "up")}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.5 }}
+                >
+                  <h1 className="text-white tracking-wider font-primary text-7xl! lg:text-6xl! sm:text-5xl! text-center !font-black w-[10ch] sm:w-[20ch]">
+                    Jadon Montgomery
+                  </h1>
+                </motion.div>
+
+                <motion.div
+                  variants={fadeIn(fadeInModerateDelay, "up")}
+                  whileInView={"show"}
+                  initial="hidden"
+                  viewport={{ once: true, amount: 0 }}
+                >
+                  <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3x1! sm:text-[1.6rem]! font-extralight! text-center">
+                    Full-Stack Developer
+                  </h2>
+                </motion.div>
+              </div>
+
+              <motion.div
+                variants={fadeIn(fadeInLateDelay)}
+                whileInView={"show"}
+                initial="hidden"
+                viewport={{ once: true, amount: 0 }}
+              ></motion.div>
+            </div>
+          </div>
           <div className="bg-fixed h-full w-full flex items-center justify-center pt-20">
             <div className="w-full h-full container flex justify-center">
               <div className=" lg:gap-12 w-screen flex flex-col sm:flex-col xl:flex-row justify-center items-center mx-6 ">
@@ -59,59 +102,6 @@ const Hero = () => {
                   className="w-[30%] lg:w-[20%] object-fit rounded-4xl "
                 />
               </div> */}
-
-                <div className="xl:h-screen sm:h-[50vh] flex flex-col justify-center items-center w-1/2 gap-6 ">
-                  <div className="flex flex-col items-center justify-center gap-2">
-                    <motion.div
-                      variants={fadeIn(fadeInModerateDelay, "up")}
-                      initial="hidden"
-                      whileInView={"show"}
-                      viewport={{ once: true, amount: 0.5 }}
-                    >
-                      <h1 className="text-white tracking-wider font-primary text-7xl! lg:text-8xl! sm:text-5xl! text-center !font-black w-[10ch] sm:w-[20ch]">
-                        Jadon Montgomery
-                      </h1>
-                    </motion.div>
-
-                    <motion.div
-                      variants={fadeIn(fadeInModerateDelay, "up")}
-                      whileInView={"show"}
-                      initial="hidden"
-                      viewport={{ once: true, amount: 0 }}
-                    >
-                      <h2 className="text-white tracking-[0.2em]! font-primary lg:text-5xl! sm:text-[1.6rem]! font-extralight! text-center">
-                        Full-Stack Developer
-                      </h2>
-                    </motion.div>
-                  </div>
-
-                  <motion.div
-                    variants={fadeIn(fadeInLateDelay)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true, amount: 0.5 }}
-                  >
-                    <p className="font-secondary text-center lg:!text-[1.1rem] xl:!text-[1.1rem] mt-2 text-white/90 text-[90%] text-pretty md:max-w-[80ch] sm:max-w-[30ch] mx-auto  font-light ">
-                      A passionate software developer and youtuber, striving to
-                      grow and inspire.
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    variants={fadeIn(fadeInLateDelay)}
-                    whileInView={"show"}
-                    initial="hidden"
-                    viewport={{ once: true, amount: 0 }}
-                  >
-                    <SocialsGroup topMargin="mt-4" />
-                  </motion.div>
-
-                  <motion.div
-                    variants={fadeIn(fadeInLateDelay)}
-                    whileInView={"show"}
-                    initial="hidden"
-                    viewport={{ once: true, amount: 0 }}
-                  ></motion.div>
-                </div>
 
                 {/* <motion.div
                 variants={fadeIn(fadeInDelay, "right")}

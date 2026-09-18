@@ -7,16 +7,16 @@ import BioWindow from "./BioWindow";
 
 const MemoryStates = () => {
   return (
-    <div className="flex-col justify-center items-center">
-      <div className="flex-col flex justify-center items-center">
+    <div className="flex-col justify-center items-center z-5">
+      {/* <div className="flex-col flex justify-center items-center">
         <div className="h-0.5 w-screen bg-white" />
         <p className="text-2xl!">About</p>
         <div className="h-0.5 w-screen bg-white" />
-      </div>
+      </div> */}
 
       <Section
         id="aboutMe"
-        className="relative flex justify-center h-screen items-center w-[90%] overflow-hidden"
+        className="relative flex justify-center bg-black h-screen items-center w-[100%] overflow-hidden"
       >
         <BioWindow
           contents={<img src="/DeskSetupPfp.jpg" className="object-fill" />}
@@ -29,7 +29,7 @@ const MemoryStates = () => {
             initial="hidden"
             viewport={{ once: true, amount: 0 }}
           >
-            <h1 className="text-white font-primary xl:!text-7xl sm:!text-5xl text-center !font-light italic w-[8ch] sm:w-[24ch]">
+            <h1 className="text-white font-primary xl:!text-7xl sm:!text-5xl text-center !font-light w-[8ch] sm:w-[24ch]">
               I'm Jadon,
               <br /> a passionate software developer
             </h1>

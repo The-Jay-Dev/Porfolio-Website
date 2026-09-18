@@ -30,8 +30,8 @@ const Header = () => {
   };
   return (
     <div
-      className={`fixed font-primary top-0 left-0 w-full z-1
-    border-b border-white backdrop-blur-3xl
+      className={`fixed font-primary top-0 left-0 w-full z-5
+     border-white
      ${openNavigation ? "bg-neutral-800" : ""}`}
     >
       <div className="flex justify-center items-center  py-8">

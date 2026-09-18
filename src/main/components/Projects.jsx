@@ -9,6 +9,9 @@ import { div } from "framer-motion/client";
 const About = () => {
   return (
     <div className="flex justify-center mb-24 mt-24 ">
+      <div className="absolute  bg-fixed flex-col justify-center w-full h-full bg-[url('/campus-outdoors-2026.jpg')] bg-cover ">
+        <div className="backdrop-blur-sm w-full h-full"></div>
+      </div>
       <BioWindow
         flexData={"flex"}
         id="projects"
