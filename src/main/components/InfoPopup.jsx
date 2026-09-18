@@ -2,14 +2,16 @@ import React from "react";
 
 const InfoPopup = () => {
   return (
-    <div className="w-fit h-fit flex justify-center items-center z-5 self-end mr-24 mb-48">
+    <div className="hidden w-fit h-fit xl:scale-[80%] lg:flex justify-center items-center z-5 self-end mr-32  mb-12">
       <div className="flex-col flex gap-2 justify-center items-center ">
         <p className="w-[36ch] font-light font-primary text-[1.2rem]! text-white self-start! ">
-          $ ./init --profile lefkos <br /> MOUNT :: experience.log ....... OK
+          cout &lt;&lt; "Profile activated."; <br />{" "}
+          std::chrono::system_clock::to_time_t(now); cout &lt;&lt; "Switching to
+          JS...";
           <br />
-          ROLE :: LEAD_FRONTEND_DEVELOPER
-          <br /> FOCUS :: LEGACY_PLATFORMS REACT <br />
-          STATUS :: ONLINE
+          console.log("ROLE: FULL_STACK
+          <br /> FOCUS: LEGACY_PLATFORMS REACT <br />
+          STATUS: ONLINE);
         </p>
 
         <div>

@@ -10,13 +10,13 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex h-screen justify-center pt-16 bg-home-bg-primary bg-cover"
+      className=" flex flex-col h-fit items-center justify-center pt-16 bg-home-bg-primary bg-cover"
     >
-      <h1 className="text-home-text-primary absolute left-[10%] mt-16 text-start tracking-wider font-secondary text-5xl font-bold! z-10">
+      <h1 className="text-home-text-primary mt-16 text-center xl:text-start tracking-wider font-secondary text-5xl font-bold! z-10">
         What I've been working on lately...
       </h1>
-      <div className="absolute  bg-fixed flex-col justify-center w-full h-full  " />
-      <h1 className="absolute right-0 text-[18rem]! text-home-bg-secondary/80!">
+
+      <h1 className="md:absolute xl:block hidden right-0 text-[18rem]! text-home-bg-secondary/80!">
         PROJECTS
       </h1>
 
@@ -25,9 +25,9 @@ const Projects = () => {
         whileInView={"show"}
         initial="hidden"
         viewport={{ once: true, amount: 0 }}
-        className="h-full w-full"
+        className="mt-24 mb-24 xl:grid grid-cols-2 justify-center grid-rows-2 h-full w-full xl:w-[80%] flex flex-col items-center gap-6 lg:gap-16!"
       >
-        <div className="absolute left-[5%] mt-48 w-[30%]">
+        <div className="w-fit h-full">
           <ProjectContainer
             extraClassNames={"col-span-2"}
             source="/RebirthTitleScreen.png"
@@ -37,7 +37,7 @@ const Projects = () => {
             btnUrl="/projectRebirth"
           />
         </div>
-        <div className="absolute right-[50%] mt-[30%] w-[30%]">
+        <div className=" w-fit h-full">
           <ProjectContainer
             source="/Quizzer.png"
             altText="Quizzer Image"
@@ -47,7 +47,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="absolute right-[5%] mt-48 w-[30%]">
+        <div className="w-fit h-full">
           <ProjectContainer
             source="/GodotTrajectoryLineScreen.png"
             altText="Trajectory Line Project Image"
@@ -57,7 +57,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="absolute right-[10%] mt-[30%] w-[30%]">
+        <div className=" w-fit h-full">
           <ProjectContainer
             extraClassNames={"row-span-2"}
             source="/FileExplorerMainScreen.png"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SocialsButton = ({ btnXMLNS, btnHref, btnD }) => {
+const SocialsButton = ({ btnXMLNS, btnHref, btnD, viewBox }) => {
   return (
     <div className="main-socials-icon-color ">
       <a
@@ -11,7 +11,7 @@ const SocialsButton = ({ btnXMLNS, btnHref, btnD }) => {
       >
         <svg
           className="object-fit fill-current "
-          viewBox="0 0 24 24"
+          viewBox={viewBox}
           xmlns={btnXMLNS}
           width="24"
           height="24"

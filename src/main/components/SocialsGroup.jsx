@@ -7,13 +7,15 @@ const SocialsGroup = ({ topMargin, bottomMargin }) => {
       className={`flex justify-center items-center gap-6 ${topMargin} ${bottomMargin} `}
     >
       <SocialsButton
+        viewBox={"0 0 512 512"}
         btnXMLNS={"http://www.w3.org/2000/svg"}
-        btnHref={"https://www.youtube.com/@The-Jay-Dev"}
+        btnHref={"https://www.instagram.com/the.jay.dev/"}
         btnD={
-          "M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z"
+          "M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32 M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112"
         }
       />
       <SocialsButton
+        viewBox={"0 0 24 24"}
         btnXMLNS={"http://www.w3.org/2000/svg"}
         btnHref={"https://x.com/The_Jay_Dev"}
         btnD={
@@ -22,6 +24,7 @@ const SocialsGroup = ({ topMargin, bottomMargin }) => {
       />
 
       <SocialsButton
+        viewBox={"0 0 24 24"}
         btnXMLNS={"http://www.w3.org/2000/svg"}
         btnHref={"https://bsky.app/profile/the-jay-dev.bsky.social"}
         btnD={
@@ -29,6 +32,7 @@ const SocialsGroup = ({ topMargin, bottomMargin }) => {
         }
       />
       <SocialsButton
+        viewBox={"0 0 24 24"}
         btnXMLNS={"http://www.w3.org/2000/svg"}
         btnHref={"https://www.linkedin.com/in/jadon-montgomery-564813329/"}
         btnD={

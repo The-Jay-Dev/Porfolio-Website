@@ -7,14 +7,8 @@ import BioWindow from "./BioWindow";
 
 const AboutMe = () => {
   return (
-    <div id="aboutMe" className="bg-home-bg-secondary bg-cover z-5">
-      {/* <div className="flex-col flex justify-center items-center">
-        <div className="h-0.5 w-screen bg-white" />
-        <p className="text-2xl!">About</p>
-        <div className="h-0.5 w-screen bg-white" />
-      </div> */}
-
-      <h1 className="absolute left-0 text-[18rem]! text-home-bg-primary/80! z-1">
+    <div id="aboutMe" className="bg-home-bg-secondary bg-cover z-5 w-full">
+      <h1 className="absolute xl:block hidden left-0 text-[18rem]! text-home-bg-primary/80! z-1">
         ABOUT
       </h1>
 
@@ -22,12 +16,12 @@ const AboutMe = () => {
         <div className="absolute z-0 bg-fixed flex-col justify-center w-full h-full  " />
         <Section
           id="aboutMe"
-          className=" flex justify-center h-screen items-center w-[90%] z-5"
+          className="xl:gap-24 flex justify-center h-screen items-center w-full md:w-[90%] xl:w-[90%] z-5"
         >
-          <div className="w-full full">
+          <div className="xl:block hidden w-full ">
             <img
               src="/DeskSetupPfp.jpg"
-              className="object-fit w-full p-2 rounded-[20%]"
+              className="object-fill hidden w-full h-full md:block pt-48 pb-48 rounded"
             />
           </div>
 
@@ -38,7 +32,7 @@ const AboutMe = () => {
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
             >
-              <h1 className="text-white font-primary xl:!text-7xl sm:!text-5xl text-center !font-bold w-[8ch] sm:w-[24ch]">
+              <h1 className="text-white font-primary text-3xl xl:text-7xl sm:!text-5xl text-center font-bold w-[12ch] sm:w-[24ch]">
                 I'm Jadon,
                 <br /> a passionate software developer
               </h1>
@@ -50,16 +44,16 @@ const AboutMe = () => {
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
             >
-              <p className="text-center sm:text-center  font-secondary  md:!text-[1.3rem] lg:!text-[1.4rem]  mt-7  text-white/90 text-[100%] text-pretty w-[30ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
+              <p className="text-center text-[1.3rem] sm:text-2xl! sm:text-center  font-secondary  md:text-[1.8rem]! xl:text-[1.1rem]! mt-7  text-white/90 text-pretty w-[30ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
                 I’m Jadon (Jay), a self-taught software developer who enjoys
                 transforming ideas into stunning, modern applications that blend
-                creativity with clean code. I specialize in C++ and Qt
-                development, building everything from engaging video games to
+                creativity with clean code. I specialize in C++, Javascript and
+                Qt development, building everything from engaging video games to
                 innovative desktop apps. Recently, I've been developing{" "}
                 <a
                   href="/projectRebirth"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-800 text-black"
+                  className="hover:text-purple-800 text-home-accent-primary"
                 >
                   Rebirth
                 </a>

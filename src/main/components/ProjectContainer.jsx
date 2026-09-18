@@ -18,14 +18,14 @@ const ProjectContainer = ({
     <Tilt>
       <button
         onClick={() => (window.location.href = btnUrl)}
-        className={`${extraClassNames} container hover:cursor-pointer h-full w-full overflow-hidden`}
+        className={`${extraClassNames} container hover:cursor-pointer relative h-96 w-full overflow-hidden`}
       >
         <motion.div
           variants={fadeIn(0.6)}
           whileInView={"show"}
           initial="hidden"
           viewport={{ once: true, amount: 0 }}
-          className="w-full h-full bg-black"
+          className="w-full h-full flex justify-center bg-black"
         >
           <img
             className="h-full w-full object-cover"
