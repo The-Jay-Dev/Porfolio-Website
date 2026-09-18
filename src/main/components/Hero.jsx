@@ -51,7 +51,7 @@ const Hero = () => {
         className="object-cover w-full h-full absolute z-0"
         src="/JDevHomePreview.mp4"
       />
-      <NavigationTracker cursor={cursor} className="z-5" />
+      <NavigationTracker cursor={cursor} className="z-50" />
 
       <div className="flex flex-col justify-center items-center z-5">
         <Section className=" flex justify-center items-center w-screen h-screen">

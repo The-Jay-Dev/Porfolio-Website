@@ -6,7 +6,7 @@ const CallToAction = () => {
   return (
     <div
       id="contact"
-      className=" relative mx-auto h-96 bg-black-800 flex flex-col justify-center items-center bg-transparent "
+      className=" relative mx-auto h-96 bg-black-800 flex flex-col justify-center items-center bg-[#1b2431] "
     >
       <div className="w-[80%] h-[40%] object-contain z-1 flex flex-col justify-center gap-4 items-center">
         <div className="w-[30ch] sm:w-[50ch] !md:w-1/2 flex  justify-center  items-center">

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       className="relative flex flex-col 
-    bg-transparent
+    bg-[#1b2431]
     text-gray-200 mx-auto 
     items-center
     justify-center"

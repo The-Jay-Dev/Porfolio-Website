@@ -16,9 +16,9 @@ const App = () => {
 
         <div className="fixed -z-10 inset-0 backdrop-blur-sm" />
         <Hero />
+        <Projects />
         <AboutMe />
         <Skills />
-        <Projects />
         <Contact />
         <Footer />
       </div>

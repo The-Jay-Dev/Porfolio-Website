@@ -14,9 +14,14 @@ const MemoryStates = () => {
         <div className="h-0.5 w-screen bg-white" />
       </div> */}
 
+      <h1 className="absolute left-0 text-[18rem]! text-[#1b2431]/80! z-1">
+        ABOUT
+      </h1>
+
+      <div className="absolute z-0 bg-fixed flex-col justify-center w-full h-full bg-[#273142] bg-cover " />
       <Section
         id="aboutMe"
-        className="relative flex justify-center bg-black h-screen items-center w-[100%] overflow-hidden"
+        className="relative flex justify-center  h-screen items-center w-full z-5"
       >
         <BioWindow
           contents={<img src="/DeskSetupPfp.jpg" className="object-fill" />}
