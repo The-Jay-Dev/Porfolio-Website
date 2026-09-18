@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer
       className="relative flex flex-col 
-    bg-neutral-800
+    bg-home-bg-primary
     text-gray-200 mx-auto 
     items-center
     justify-center"
     >
       <div className="relative mx-auto w-full h-full ">
-        <div className="w-full h-16   bg-neutral-700/40 py-4 px-4">
+        <div className="w-full h-16 bg-transparent py-4 px-4">
           <div className=" w-full h-full  flex justify-center">
             <a href="#">
               <img

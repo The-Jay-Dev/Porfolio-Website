@@ -11,8 +11,13 @@ export const homeNavigation = [
   },
   {
     id: 2,
-    title: "Contact",
-    url: "/#contact",
+    title: "About",
+    url: "/#aboutMe",
+  },
+  {
+    id: 3,
+    title: "Skills",
+    url: "/#skills",
   },
 ];
 
