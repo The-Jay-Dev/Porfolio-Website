@@ -98,6 +98,10 @@ const Hero = () => {
   });
   return (
     <div className="relative overflow-hidden">
+      <div
+        className={`${isAnimating ? "opacity-0 absolute" : "opacity-100 fixed"} ${!largeScreen ? "hidden" : ""} z-10 transition duration-3000 bg-black w-screen h-screen`}
+      />
+
       <video
         autoPlay
         loop
@@ -106,18 +110,18 @@ const Hero = () => {
         className="object-cover w-full h-full absolute z-0"
         src="/JDevHomePreview.mp4"
       />
-      <NavigationTracker cursor={cursor} className="z-50" />
+      <div className="z-0 w-screen h-screen absolute bg-linear-to-b   from-home-bg-primary/70 via-home-bg-primary/30 to-home-bg-primary" />
+      <NavigationTracker cursor={cursor} className="" />
 
-      <div className="flex flex-col justify-center items-center z-5">
+      <div className="flex relative flex-col justify-center items-center z-20">
         <Section className=" flex justify-center items-center w-screen h-screen">
-          <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-home-bg-primary/70 via-home-bg-primary/30 to-home-bg-primary" />
           <div className="justify-center absolute bottom-0 mb-12 flex w-full h-full  lg:h-2/12 items-center">
             <InfoPopup
               beginIntroAnimation={beginIntroAnimation}
               largeScreen={largeScreen}
             />
             <div className="lg:w-2/4 hidden h-full" />
-            <div className=" z-2 flex flex-col justify-center items-center lg:w-1/2  ">
+            <div className="flex flex-col justify-center items-center lg:w-1/2  ">
               <div className="flex flex-col items-center justify-center gap-2">
                 <motion.div
                   variants={fadeIn(fadeInModerateDelay, "up")}
@@ -168,9 +172,6 @@ const Hero = () => {
         </Section>
         {/* <div className="h-0.5 w-full bg-white  "></div> */}
       </div>
-      <div
-        className={`${isAnimating ? "opacity-0 absolute" : "opacity-100 fixed"} ${!largeScreen ? "hidden" : ""} transition duration-3000 bg-black z-4 w-screen h-screen`}
-      />
     </div>
   );
 };

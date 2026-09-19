@@ -4,7 +4,7 @@ import { homeNavigation } from "../../constants/PrimaryNavigation";
 const NavigationTracker = ({ cursor }) => {
   return (
     <div
-      className={`hidden  scale-[80%] lg:flex fixed z-10 top-0 right-0 w-fit h-screen items-center justify-center`}
+      className={`hidden z-50 scale-[80%] lg:flex fixed top-0 right-0 w-fit h-screen items-center justify-center`}
     >
       <div
         className={` flex items-center justify-center w-full hover:opacity-30 z-2 h-[60%]`}

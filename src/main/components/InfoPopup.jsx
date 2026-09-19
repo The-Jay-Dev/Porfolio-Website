@@ -20,7 +20,7 @@ const InfoPopup = ({ beginIntroAnimation, largeScreen }) => {
     speed: 1,
   });
   return (
-    <div className="hidden p-16 relative -translate-y-32  scale-70  xl:mr-64 lg:flex justify-center items-center z-5  mb-12 gap-6">
+    <div className="hidden p-16 relative -translate-y-32  scale-70  xl:mr-64 lg:flex justify-center items-center z-20  mb-12 gap-6">
       <div className="flex-col flex gap-2 justify-center items-center ">
         <p
           ref={bioScrambleRef}
