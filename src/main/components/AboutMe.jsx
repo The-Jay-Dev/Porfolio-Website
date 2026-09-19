@@ -8,12 +8,12 @@ import BioWindow from "./BioWindow";
 const AboutMe = () => {
   return (
     <div id="aboutMe" className="bg-home-bg-secondary bg-cover z-5 w-full">
-      <h1 className="absolute xl:block hidden left-0 text-[18rem]! text-home-bg-primary/80! z-1">
+      <h1 className="absolute -translate-y-20 xl:block hidden left-0 text-[18rem]! text-home-bg-primary/80! z-1">
         ABOUT
       </h1>
 
       <div className="flex-col flex justify-center items-center">
-        <div className="absolute z-0 bg-fixed flex-col justify-center w-full h-full  " />
+        <div className="absolute z-0 bg-fixed flex-col justify-center w-full h-full" />
         <Section
           id="aboutMe"
           className="xl:gap-24 flex justify-center h-screen items-center w-full md:w-[90%] xl:w-[90%] z-5"

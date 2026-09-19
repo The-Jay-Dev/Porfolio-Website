@@ -7,6 +7,7 @@ import { fadeIn } from "../../AnimationStates";
 import NavigationTracker from "./NavigationTracker";
 import { homeNavigation } from "../../constants/PrimaryNavigation";
 import InfoPopup from "./InfoPopup";
+import DownloadResumeButton from "./DownloadResumeButton";
 
 const Hero = () => {
   const fadeInDelay = 0.4;
@@ -86,6 +87,15 @@ const Hero = () => {
                   <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3x1! text-[1.6rem] sm:text-[1.6rem]! font-extralight! text-center w-[32ch]">
                     Full-Stack Developer
                   </h2>
+                </motion.div>
+
+                <motion.div
+                  variants={fadeIn(fadeInModerateDelay, "up")}
+                  whileInView={"show"}
+                  initial="hidden"
+                  viewport={{ once: true }}
+                >
+                  <DownloadResumeButton />
                 </motion.div>
               </div>
 

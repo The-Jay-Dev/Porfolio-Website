@@ -11,9 +11,9 @@ const Skills = () => {
     >
       <h1 className="p-16 text-start tracking-wider font-primary text-9xl sm:text-5xl! font-black! z-1">
         My Skills
-        <h1 className="absolute xl:block hidden left-1/2 text-[18rem]! text-home-bg-secondary/80!">
-          SKILLS
-        </h1>
+      </h1>
+      <h1 className="absolute xl:block hidden left-1/2 text-[18rem]! text-home-bg-secondary/80!">
+        SKILLS
       </h1>
       <motion.div
         variants={fadeIn(0.4, "up")}

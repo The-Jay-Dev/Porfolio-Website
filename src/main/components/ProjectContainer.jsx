@@ -39,15 +39,30 @@ const ProjectContainer = ({
               // viewport={{ once: true, amount: 0 }}
               className="flex flex-col justify-end items-start w-full h-full gap-2 pb-8 mx-6"
             >
-              <div className="flex flex-col justify-center items-start">
-                <h3 className="text-3xl!  font-primary font-light!">
-                  {projectTitle}
-                </h3>
-                <div className="h-0.5 bg-white w-[120%]" />
-              </div>
-              <p className="text-start font-secondary font-light!  w-[40ch]">
-                {description}
-              </p>
+              <motion.div
+                variants={fadeIn(1, "up")}
+                whileInView={"show"}
+                initial="hidden"
+                viewport={{ once: true, amount: 0 }}
+              >
+                <div className="flex flex-col justify-center items-start">
+                  <h3 className="text-3xl!  font-primary font-light!">
+                    {projectTitle}
+                  </h3>
+                  <div className="h-0.5 bg-white w-[120%]" />
+                </div>
+              </motion.div>
+
+              <motion.div
+                variants={fadeIn(2, "right")}
+                whileInView={"show"}
+                initial="hidden"
+                viewport={{ once: true, amount: 0 }}
+              >
+                <p className="text-start font-secondary font-light!  w-[40ch]">
+                  {description}
+                </p>
+              </motion.div>
             </div>
           </div>
         </motion.div>

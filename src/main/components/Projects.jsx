@@ -16,7 +16,7 @@ const Projects = () => {
         What I've been working on lately...
       </h1>
 
-      <h1 className="md:absolute xl:block hidden right-0 text-[18rem]! text-home-bg-secondary/80!">
+      <h1 className="md:absolute xl:block -translate-y-120 translate-x-120 hidden right-0 text-[18rem]! text-home-bg-secondary/80!">
         PROJECTS
       </h1>
 
