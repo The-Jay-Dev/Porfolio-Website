@@ -27,46 +27,39 @@ const Projects = () => {
         viewport={{ once: true, amount: 0 }}
         className="mt-24 mb-24 xl:grid grid-cols-2 justify-center grid-rows-2 h-full w-[80%] xl:w-[70%] flex flex-col items-center gap-6 lg:gap-16!"
       >
-        <div className="w-fit h-full">
-          <ProjectContainer
-            extraClassNames={"col-span-2"}
-            source="/RebirthTitleScreen.png"
-            altText="Rebirth Title Image"
-            description="An experimental rhythm game crafted with Qt and Miniaudio frameworks."
-            projectTitle="Rebirth"
-            btnUrl="/projectRebirth"
-          />
-        </div>
-        <div className=" w-fit h-full">
-          <ProjectContainer
-            source="/Quizzer.png"
-            altText="Quizzer Image"
-            description="A self-quizzing website produced with base JavaScript."
-            projectTitle="Quizzer"
-            btnUrl="https://github.com/The-Jay-Dev/Quizzer-Website"
-          />
-        </div>
+        <ProjectContainer
+          extraClassNames={"col-span-2"}
+          source="/RebirthTitleScreen.png"
+          altText="Rebirth Title Image"
+          description="An experimental rhythm game crafted with Qt and Miniaudio frameworks."
+          projectTitle="Rebirth"
+          btnUrl="/projectRebirth"
+        />
 
-        <div className="w-fit h-full">
-          <ProjectContainer
-            source="/GodotTrajectoryLineScreen.png"
-            altText="Trajectory Line Project Image"
-            description="A trajectory line that predicts the player's jump path."
-            projectTitle="Trajectory Line Engine"
-            btnUrl="https://github.com/The-Jay-Dev/2D-Trajectory-Line-GodotV4.3"
-          />
-        </div>
+        <ProjectContainer
+          source="/Quizzer.png"
+          altText="Quizzer Image"
+          description="A self-quizzing website produced with base JavaScript."
+          projectTitle="Quizzer"
+          btnUrl="https://github.com/The-Jay-Dev/Quizzer-Website"
+        />
 
-        <div className=" w-fit h-full">
-          <ProjectContainer
-            extraClassNames={"row-span-2"}
-            source="/FileExplorerMainScreen.png"
-            altText="File Explorer Project Image"
-            description="A tool for automatic file renaming."
-            projectTitle="File Sorter"
-            btnUrl="https://github.com/The-Jay-Dev/File-Sorter"
-          />
-        </div>
+        <ProjectContainer
+          source="/GodotTrajectoryLineScreen.png"
+          altText="Trajectory Line Project Image"
+          description="A trajectory line that predicts the player's jump path."
+          projectTitle="Trajectory Line Engine"
+          btnUrl="https://github.com/The-Jay-Dev/2D-Trajectory-Line-GodotV4.3"
+        />
+
+        <ProjectContainer
+          extraClassNames={"row-span-2"}
+          source="/FileExplorerMainScreen.png"
+          altText="File Explorer Project Image"
+          description="A tool for automatic file renaming."
+          projectTitle="File Sorter"
+          btnUrl="https://github.com/The-Jay-Dev/File-Sorter"
+        />
       </motion.div>
 
       <button></button>

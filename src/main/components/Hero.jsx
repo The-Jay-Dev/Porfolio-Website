@@ -51,9 +51,9 @@ const Hero = () => {
     console.log(
       subtitleCursor > subtitleList.length - 1,
       subtitleCursor,
-      subtitleList,
       subtitleList[subtitleCursor],
     );
+
     if (subtitleCursor > subtitleList.length - 1) {
       subtitleCursor = 0;
       setSubtitleText(subtitleList[subtitleCursor]);
@@ -61,7 +61,6 @@ const Hero = () => {
       setSubtitleText(subtitleList[subtitleCursor]);
     }
 
-    replaySubtitle();
     subtitleCursor++;
   };
 
@@ -134,7 +133,7 @@ const Hero = () => {
                       enableSubtitle();
                     }
                   }}
-                  onAnimationComplete={enableSubtitle}
+                  onAnimationComplete={!largeScreen ? enableSubtitle : ""}
                 >
                   <h1 className="text-white tracking-wider font-primary text-[3rem]! md:text-7xl! lg:text-5xl! sm:text-8xl! text-center font-black! w-fit! md:w-[10ch] ">
                     Jadon Montgomery

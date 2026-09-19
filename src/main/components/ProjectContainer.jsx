@@ -25,20 +25,15 @@ const ProjectContainer = ({
           whileInView={"show"}
           initial="hidden"
           viewport={{ once: true, amount: 0 }}
-          className="w-full h-full flex justify-center bg-black"
+          className="w-full h-full bg-black"
         >
           <img
-            className="h-full w-full object-cover"
+            className=" object-cover w-full h-full"
             src={source}
             alt={altText}
           />
           <div className="w-full absolute inset-0 bg-linear-to-tr from-black to-transparent from-10% to-70% hover:bg-home-accent-primary/50 bg-transparent transition opacity-90">
-            <div
-              // whileHover={{ opacity: 100, y: -10 }}
-              //  initial={{ opacity: 0, y: 40 }}
-              // viewport={{ once: true, amount: 0 }}
-              className="flex flex-col justify-end items-start w-full h-full gap-2 pb-8 mx-6"
-            >
+            <div className="flex flex-col justify-end items-start w-full h-full gap-2 pb-8 mx-6">
               <motion.div
                 variants={fadeIn(1, "up")}
                 whileInView={"show"}
