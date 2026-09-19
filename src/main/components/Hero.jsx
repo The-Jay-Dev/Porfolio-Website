@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Section from "./Section";
 import CallToActionButton from "./CallToActionButton";
 import SocialsGroup from "./SocialsGroup";
@@ -8,13 +8,62 @@ import NavigationTracker from "./NavigationTracker";
 import { homeNavigation } from "../../constants/PrimaryNavigation";
 import InfoPopup from "./InfoPopup";
 import DownloadResumeButton from "./DownloadResumeButton";
+import { useScramble } from "use-scramble";
 
 const Hero = () => {
-  const fadeInDelay = 0.4;
+  const fadeInDelay = 0.3;
   const fadeInModerateDelay = 1.5;
   const fadeInLateDelay = 3;
   const [cursor, setCursor] = useState(0);
   const navigationOffsetY = 600;
+  const [subtitleText, setSubtitleText] = useState("");
+  const [largeScreen, setLargeScreen] = useState(false);
+
+  const subtitleList = ["Full-Stack Developer", "Content Creator"];
+  const [isAnimating, setIsAnimating] = useState(false);
+  let subtitleCursor = 0;
+
+  useEffect(() => {
+    setLargeScreen(window.innerWidth >= 1024);
+
+    if (!(window.innerWidth >= 1024)) {
+      setIsAnimating(true);
+    }
+  });
+
+  const { ref: refSubtitle, replay: replaySubtitle } = useScramble({
+    playOnMount: false,
+    overflow: false,
+    text: subtitleText,
+    speed: 0.5,
+    step: 1,
+  });
+  const beginIntroAnimation = () => {
+    setIsAnimating(true);
+  };
+
+  const enableSubtitle = () => {
+    playSubtitle();
+    const interval = setInterval(playSubtitle, 5000);
+  };
+
+  const playSubtitle = () => {
+    console.log(
+      subtitleCursor > subtitleList.length - 1,
+      subtitleCursor,
+      subtitleList,
+      subtitleList[subtitleCursor],
+    );
+    if (subtitleCursor > subtitleList.length - 1) {
+      subtitleCursor = 0;
+      setSubtitleText(subtitleList[subtitleCursor]);
+    } else {
+      setSubtitleText(subtitleList[subtitleCursor]);
+    }
+
+    replaySubtitle();
+    subtitleCursor++;
+  };
 
   const NAVIGATION_LOCATION = homeNavigation.reduce(
     (accumulate, destination) => ({
@@ -50,6 +99,9 @@ const Hero = () => {
   });
   return (
     <div className="relative overflow-hidden">
+      <div
+        className={`${isAnimating ? "opacity-0 absolute" : "opacity-100 fixed"} ${!largeScreen ? "hidden" : ""} transition duration-3000 bg-black z-5 w-screen h-screen`}
+      />
       <video
         autoPlay
         loop
@@ -64,15 +116,25 @@ const Hero = () => {
         <Section className=" flex justify-center items-center w-screen h-screen">
           <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-home-bg-primary/70 via-home-bg-primary/30 to-home-bg-primary" />
           <div className="justify-center absolute bottom-0 mb-12 flex w-full h-full  lg:h-2/12 items-center">
-            <InfoPopup />
+            <InfoPopup
+              beginIntroAnimation={beginIntroAnimation}
+              largeScreen={largeScreen}
+            />
             <div className="lg:w-2/4 hidden h-full" />
-            <div className=" z-1 flex flex-col justify-center items-center lg:w-1/2  ">
+            <div className=" z-2 flex flex-col justify-center items-center lg:w-1/2  ">
               <div className="flex flex-col items-center justify-center gap-2">
                 <motion.div
                   variants={fadeIn(fadeInModerateDelay, "up")}
                   initial="hidden"
-                  whileInView={"show"}
+                  whileInView={isAnimating || !largeScreen ? "show" : ""}
                   viewport={{ once: true, amount: 0.5 }}
+                  onAnimationStart={() => {
+                    if (isAnimating && largeScreen) {
+                      document.body.style.overflow = "";
+                      enableSubtitle();
+                    }
+                  }}
+                  onAnimationComplete={enableSubtitle}
                 >
                   <h1 className="text-white tracking-wider font-primary text-[3rem]! md:text-7xl! lg:text-5xl! sm:text-8xl! text-center font-black! w-fit! md:w-[10ch] ">
                     Jadon Montgomery
@@ -85,14 +147,15 @@ const Hero = () => {
                   initial="hidden"
                   viewport={{ once: true, amount: 0 }}
                 >
-                  <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3x1 text-[1.3rem] sm:text-[1.6rem] font-extralight! text-center w-[32ch]">
-                    Full-Stack Developer
-                  </h2>
+                  <h2
+                    ref={refSubtitle}
+                    className="text-white tracking-[0.2em]! font-primary lg:text-3x1 text-[1.3rem] sm:text-[1.6rem] font-extralight! text-center w-[32ch]"
+                  ></h2>
                 </motion.div>
 
                 <motion.div
-                  variants={fadeIn(fadeInModerateDelay + 1, "up")}
-                  whileInView="show"
+                  variants={fadeIn(fadeInModerateDelay + 2, "up")}
+                  whileInView={isAnimating || !largeScreen ? "show" : ""}
                   initial="hidden"
                   viewport={{ once: true }}
                 >
