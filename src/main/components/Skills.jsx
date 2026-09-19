@@ -9,10 +9,10 @@ const Skills = () => {
       id="skills"
       className="flex overflow-hidden! flex-col justify-center items-center bg-home-bg-primary "
     >
-      <h1 className="p-16 text-start tracking-wider font-primary text-9xl sm:text-5xl! font-black! z-1">
+      <h1 className="pt-16 lg:pb-4 md:text-start text-center md:tracking-wider font-primary text-9xl sm:text-5xl! w-[12ch] font-black! z-1">
         My Skills
       </h1>
-      <h1 className="absolute xl:block hidden left-1/2 text-[18rem]! text-home-bg-secondary/80!">
+      <h1 className="absolute -translate-y-30 translate-x-40  xl:block hidden left-1/2 text-[18rem]! text-home-bg-secondary/80!">
         SKILLS
       </h1>
       <motion.div
@@ -20,9 +20,9 @@ const Skills = () => {
         whileInView={"show"}
         initial="hidden"
         viewport={{ once: true, amount: 0 }}
-        className="w-full h-full z-10"
+        className="z-10"
       >
-        <div className="w-full flex justify-center items-center h-fit pt-24 pb-24">
+        <div className="w-full flex justify-center items-center h-fit scale-90 pt-2 pb-24">
           <div className="mt-2 mb-16 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 justify-center items-center h-fit md:gap-16 gap-16 xl:gap-32">
             <SkillContainer
               sourceLink="https://isocpp.org/"

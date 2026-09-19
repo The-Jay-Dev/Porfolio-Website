@@ -25,7 +25,7 @@ const Projects = () => {
         whileInView={"show"}
         initial="hidden"
         viewport={{ once: true, amount: 0 }}
-        className="mt-24 mb-24 xl:grid grid-cols-2 justify-center grid-rows-2 h-full w-full xl:w-[80%] flex flex-col items-center gap-6 lg:gap-16!"
+        className="mt-24 mb-24 xl:grid grid-cols-2 justify-center grid-rows-2 h-full w-[80%] xl:w-[70%] flex flex-col items-center gap-6 lg:gap-16!"
       >
         <div className="w-fit h-full">
           <ProjectContainer

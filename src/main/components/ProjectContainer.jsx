@@ -15,10 +15,10 @@ const ProjectContainer = ({
   const [onClick, setOnClick] = useState(false);
 
   return (
-    <Tilt>
+    <Tilt perspective={1500}>
       <button
         onClick={() => (window.location.href = btnUrl)}
-        className={`${extraClassNames} container hover:cursor-pointer relative h-96 w-full overflow-hidden`}
+        className={`${extraClassNames} container hover:cursor-pointer relative h-48 lg:h-96 w-full overflow-hidden`}
       >
         <motion.div
           variants={fadeIn(0.6)}
@@ -46,7 +46,7 @@ const ProjectContainer = ({
                 viewport={{ once: true, amount: 0 }}
               >
                 <div className="flex flex-col justify-center items-start">
-                  <h3 className="text-3xl!  font-primary font-light!">
+                  <h3 className="text-[0.8rem] lg:text-3xl!  font-primary font-light!">
                     {projectTitle}
                   </h3>
                   <div className="h-0.5 bg-white w-[120%]" />
@@ -59,7 +59,7 @@ const ProjectContainer = ({
                 initial="hidden"
                 viewport={{ once: true, amount: 0 }}
               >
-                <p className="text-start font-secondary font-light!  w-[40ch]">
+                <p className="text-start text-[0.8rem] lg:text-[1rem] z-20 font-secondary font-light!  w-[26ch] lg:w-[40ch]">
                   {description}
                 </p>
               </motion.div>

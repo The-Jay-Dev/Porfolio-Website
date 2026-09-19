@@ -44,7 +44,7 @@ const AboutMe = () => {
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
             >
-              <p className="text-center text-[1.3rem] sm:text-2xl! sm:text-center  font-secondary  md:text-[1.8rem]! xl:text-[1.1rem]! mt-7  text-white/90 text-pretty w-[30ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
+              <p className="text-center text-[1.1rem] sm:text-2xl! sm:text-center  font-secondary  md:text-[1.8rem]! xl:text-[1.1rem]! mt-7  text-white/90 text-pretty w-[30ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
                 I’m Jadon (Jay), a self-taught software developer who enjoys
                 transforming ideas into stunning, modern applications that blend
                 creativity with clean code. I specialize in C++, Javascript and

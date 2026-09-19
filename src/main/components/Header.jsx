@@ -43,7 +43,7 @@ const Header = () => {
           className={`${openNavigation ? "hidden" : ""} flex-1 flex justify-start items-center`}
         >
           <a
-            className="hidden lg:block ease-out transition hover:scale-[110%] mx-6 w-[10%] lg:w-[15%] xl:mr-8"
+            className="hidden lg:block ease-out transition hover:scale-[110%] mx-6 w-[10%] xl:mr-8"
             href="#"
           >
             <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
