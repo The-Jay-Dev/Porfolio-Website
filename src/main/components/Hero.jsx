@@ -98,9 +98,6 @@ const Hero = () => {
   });
   return (
     <div className="relative overflow-hidden">
-      <div
-        className={`${isAnimating ? "opacity-0 absolute" : "opacity-100 fixed"} ${!largeScreen ? "hidden" : ""} transition duration-3000 bg-black z-5 w-screen h-screen`}
-      />
       <video
         autoPlay
         loop
@@ -171,6 +168,9 @@ const Hero = () => {
         </Section>
         {/* <div className="h-0.5 w-full bg-white  "></div> */}
       </div>
+      <div
+        className={`${isAnimating ? "opacity-0 absolute" : "opacity-100 fixed"} ${!largeScreen ? "hidden" : ""} transition duration-3000 bg-black z-4 w-screen h-screen`}
+      />
     </div>
   );
 };
