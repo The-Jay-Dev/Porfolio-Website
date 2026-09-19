@@ -34,6 +34,7 @@ const Hero = () => {
     const skillsSectionTop =
       document.querySelector("#skills").getBoundingClientRect().top +
       window.scrollY;
+    console.log(cursor);
 
     if (window.scrollY >= projectSectionTop - navigationOffsetY) {
       setCursor(1);
@@ -48,7 +49,7 @@ const Hero = () => {
     }
   });
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <video
         autoPlay
         loop
@@ -62,10 +63,10 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center z-5">
         <Section className=" flex justify-center items-center w-screen h-screen">
           <div className="w-screen h-screen absolute bg-linear-to-b z-1  from-home-bg-primary/70 via-home-bg-primary/30 to-home-bg-primary" />
-          <div className="justify-center absolute bottom-0 mb-12 flex w-full h-full lg:w-full lg:h-2/12 items-center">
+          <div className="justify-center absolute bottom-0 mb-12 flex w-full h-full  lg:h-2/12 items-center">
             <InfoPopup />
             <div className="lg:w-2/4 hidden h-full" />
-            <div className="xl:h-screen sm:h-[50vh] z-1 lg:mr-24 flex flex-col justify-center items-center lg:w-1/2 gap-12 ">
+            <div className=" z-1 flex flex-col justify-center items-center lg:w-1/2  ">
               <div className="flex flex-col items-center justify-center gap-2">
                 <motion.div
                   variants={fadeIn(fadeInModerateDelay, "up")}
@@ -73,7 +74,7 @@ const Hero = () => {
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <h1 className="text-white tracking-wider font-primary text-[3rem]! md:text-7xl! lg:text-6xl! sm:text-8xl! text-center font-black! w-fit! md:w-[10ch] ">
+                  <h1 className="text-white tracking-wider font-primary text-[3rem]! md:text-7xl! lg:text-5xl! sm:text-8xl! text-center font-black! w-fit! md:w-[10ch] ">
                     Jadon Montgomery
                   </h1>
                 </motion.div>
@@ -84,7 +85,7 @@ const Hero = () => {
                   initial="hidden"
                   viewport={{ once: true, amount: 0 }}
                 >
-                  <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3x1! text-[1.3rem] sm:text-[1.6rem]! font-extralight! text-center w-[32ch]">
+                  <h2 className="text-white tracking-[0.2em]! font-primary lg:text-3x1 text-[1.3rem] sm:text-[1.6rem] font-extralight! text-center w-[32ch]">
                     Full-Stack Developer
                   </h2>
                 </motion.div>

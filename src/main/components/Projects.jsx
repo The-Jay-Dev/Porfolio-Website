@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" flex flex-col h-fit items-center justify-center pt-16 bg-home-bg-primary bg-cover"
+      className=" relative overflow-hidden flex flex-col h-fit items-center justify-center pt-16 bg-home-bg-primary bg-cover"
     >
       <h1 className="text-home-text-primary mt-16 text-center xl:text-start tracking-wider font-secondary text-5xl font-bold! z-10">
         What I've been working on lately...

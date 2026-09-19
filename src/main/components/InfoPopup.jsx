@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const InfoPopup = () => {
   return (
-    <div className="hidden w-fit h-fit xl:scale-[80%] lg:flex justify-center items-center z-5 self-end mr-32  mb-12">
+    <div className="hidden p-16 relative -translate-y-32  scale-70  xl:mr-64 lg:flex justify-center items-center z-5  mb-12 gap-6">
       <div className="flex-col flex gap-2 justify-center items-center ">
-        <p className="w-[36ch] font-light font-primary text-[1.2rem]! text-white self-start! ">
+        <p className="  w-[36ch] font-light font-primary text-[1.2rem]! text-white  ">
           cout &lt;&lt; "Profile activated."; <br />{" "}
           std::chrono::system_clock::to_time_t(now); cout &lt;&lt; "Switching to
           JS...";
@@ -16,19 +17,23 @@ const InfoPopup = () => {
 
         <div>
           <img
-            className=" relative max-w-none object-cover mt-4"
+            className="object-cover mt-4"
             width={500}
             height={93}
             src="/PopupIndicator.png"
             alt=""
           />
-          {/* <img
-            className="absolute w-[16%] top-12 -right-12 mt-4"
-            width={512}
-            height={512}
-            src="/SectionedCircle.png"
-            alt=""
-          /> */}
+          <motion.div
+            animate={{ rotateZ: 360 }}
+            transition={{
+              repeat: Infinity,
+              duration: 3,
+              ease: "linear",
+            }}
+            className="absolute min-w-[15rem] hidden xl:flex top-32 left-105 scale-[30%]  "
+          >
+            <img src="/SectionedCircle.png" alt="" />
+          </motion.div>
         </div>
       </div>
     </div>

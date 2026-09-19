@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex overflow-hidden! flex-col justify-center items-center bg-home-bg-primary "
+      className="flex relative overflow-hidden flex-col justify-center items-center bg-home-bg-primary "
     >
       <h1 className="pt-16 lg:pb-4 md:text-start text-center md:tracking-wider font-primary text-9xl sm:text-5xl! w-[12ch] font-black! z-1">
         My Skills
