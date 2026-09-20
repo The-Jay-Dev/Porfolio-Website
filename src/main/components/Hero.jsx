@@ -24,11 +24,11 @@ const Hero = () => {
   let subtitleCursor = 0;
 
   useEffect(() => {
-    setLargeScreen(window.innerWidth >= 1024);
+    //setLargeScreen(window.innerWidth >= 1024);
 
-    if (!(window.innerWidth >= 1024)) {
-      setIsAnimating(true);
-    }
+    // if (!(window.innerWidth >= 1024)) {
+    setIsAnimating(true);
+    // }
   });
 
   const { ref: refSubtitle, replay: replaySubtitle } = useScramble({

@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Section from "./Section";
 import SkillContainer from "./SkillContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
 import BioWindow from "./BioWindow";
+import { useScramble } from "use-scramble";
 
 const AboutMe = () => {
+  const [bioText, setBioText] = useState("");
+  const { ref } = useScramble({
+    overflow: false,
+    text: bioText,
+    speed: 0.5,
+  });
+
+  const handleScroll = () => {
+    const sectionTop =
+      document.querySelector("#aboutMe").getBoundingClientRect().top +
+      window.scrollY;
+    if (window.scrollY >= sectionTop - 600) {
+      console.log("SCROLL");
+      window.removeEventListener("scroll", handleScroll);
+      setBioText(`I'm Jadon, a passionate software developer`);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div id="aboutMe" className="bg-home-bg-secondary bg-cover z-5 w-full">
       <h1 className="absolute -translate-y-20 xl:block hidden left-0 text-[18rem]! text-home-bg-primary/80! z-1">
@@ -27,19 +49,19 @@ const AboutMe = () => {
 
           <div className="h-screen w-full flex flex-col justify-center items-center gap-6 ">
             <motion.div
-              variants={fadeIn(0.4)}
+              variants={fadeIn(0)}
               whileInView={"show"}
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
             >
-              <h1 className="text-white font-primary text-3xl xl:text-7xl sm:!text-5xl text-center font-bold w-[12ch] sm:w-[24ch]">
-                I'm Jadon,
-                <br /> a passionate software developer
-              </h1>
+              <h1
+                ref={ref}
+                className="text-white font-primary text-3xl xl:text-7xl sm:!text-5xl text-center font-bold w-[12ch] sm:w-[24ch]"
+              ></h1>
             </motion.div>
 
             <motion.div
-              variants={fadeIn(0.6)}
+              variants={fadeIn(1)}
               whileInView={"show"}
               initial="hidden"
               viewport={{ once: true, amount: 0 }}
@@ -62,40 +84,6 @@ const AboutMe = () => {
               </p>
             </motion.div>
           </div>
-
-          {/* <div className="w-full h-full" /> */}
-          {/* <div className="z-10 bg-fixed h-full w-full flex items-center justify-center"> */}
-          {/* <div className="w-full h-full container flex justify-center"> */}
-          {/* <motion.div
-            variants={fadeIn(0.2, "up")}
-            whileInView={"show"}
-            initial="hidden"
-            viewport={{ once: true, amount: 0 }}
-            className="flex flex-col justify-center items-center w-full mb-12 mt-12"
-            >
-            <h1 className="md:h1 text-center font-primary text-4xl sm:!text-4xl !font-light italic">
-            About
-            </h1>
-            
-            <div className="w-[80%] h-0.5 bg-gradient-to-r from-transparent via-white to-transparent" />
-            </motion.div> */}
-          {/* <div className=" w-screen flex sm:flex-col md:flex-row justify-center items-center lg:gap-6 sm:gap-24 mx-6 ">
-        <motion.div
-        variants={fadeIn(0.4, "left")}
-        whileInView={"show"}
-        initial="hidden"
-        viewport={{ once: true, amount: 0 }}
-        className="w-1/2 hidden flex justify-center sm:hidden xl:flex"
-        >
-        <img
-        src="/Selfie2.jpg"
-        alt="Jay Image"
-        className="transition hover:scale-[102%] w-[70%] lg:w-[70%] md:w-full sm:w-[70%] lg:object-fit sm:object-cover rounded-4xl "
-        />
-        </motion.div>
-      </div> */}
-          {/* </div> */}
-          {/* </div> */}
         </Section>
       </div>
     </div>

@@ -21,7 +21,7 @@ const ProjectContainer = ({
         className={`${extraClassNames} container hover:cursor-pointer relative h-48 lg:h-96 w-full overflow-hidden`}
       >
         <motion.div
-          variants={fadeIn(0.6)}
+          variants={fadeIn(0)}
           whileInView={"show"}
           initial="hidden"
           viewport={{ once: true, amount: 0 }}
@@ -35,7 +35,7 @@ const ProjectContainer = ({
           <div className="w-full absolute inset-0 bg-linear-to-tr from-black to-transparent from-10% to-70% hover:bg-home-accent-primary/50 bg-transparent transition opacity-90">
             <div className="flex flex-col justify-end items-start w-full h-full gap-2 pb-8 mx-6">
               <motion.div
-                variants={fadeIn(1, "up")}
+                variants={fadeIn(0.5, "up", 1.2)}
                 whileInView={"show"}
                 initial="hidden"
                 viewport={{ once: true, amount: 0 }}
@@ -49,7 +49,7 @@ const ProjectContainer = ({
               </motion.div>
 
               <motion.div
-                variants={fadeIn(2, "right")}
+                variants={fadeIn(1.5, "right")}
                 whileInView={"show"}
                 initial="hidden"
                 viewport={{ once: true, amount: 0 }}

@@ -16,7 +16,7 @@ const Skills = () => {
         SKILLS
       </h1>
       <motion.div
-        variants={fadeIn(0.4, "up")}
+        variants={fadeIn(0.4, "up", 0.6)}
         whileInView={"show"}
         initial="hidden"
         viewport={{ once: true, amount: 0 }}

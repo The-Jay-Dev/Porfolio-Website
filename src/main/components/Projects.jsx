@@ -21,7 +21,7 @@ const Projects = () => {
       </h1>
 
       <motion.div
-        variants={fadeIn(0.5, "up")}
+        variants={fadeIn(0, "up", 0.8)}
         whileInView={"show"}
         initial="hidden"
         viewport={{ once: true, amount: 0 }}

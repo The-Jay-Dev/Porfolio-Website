@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const fadeIn = (delay, direction = "") => {
+export const fadeIn = (delay, direction = "", duration = 1.2) => {
   return {
     hidden: {
       opacity: 0,
@@ -12,7 +12,7 @@ export const fadeIn = (delay, direction = "") => {
       y: 0,
       x: 0,
       transition: {
-        duration: 1.2,
+        duration: duration,
         delay,
         ease: [0.24, 0.25, 0.25, 0.75],
       },
