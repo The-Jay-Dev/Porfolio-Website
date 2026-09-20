@@ -21,6 +21,7 @@ While it's still in its early stages, I plan to enhance it with many new feature
 # Frameworks
 `React`
 `Tailwind`
+`Framer Motion`
 `vite`  
 
 # Questions or Feedback
