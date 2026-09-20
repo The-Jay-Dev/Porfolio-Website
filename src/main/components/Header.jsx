@@ -48,10 +48,10 @@ const Header = () => {
         className={`${smallScreen ? "" : "hidden"} w-full flex  lg:justify-center items-center`}
       >
         <a
-          className={`${openNavigation ? "hidden" : ""} lg:block ease-out transition hover:scale-[110%] mx-6 w-full  lg:w-[10%] p-6`}
+          className={`${openNavigation ? "hidden" : ""} lg:block ease-out transition hover:scale-[110%]  mx-6 w-full  lg:w-[10%] p-6`}
           href="#"
         >
-          <img src="/JayDevLogo.png" width={128} height={128} alt="JayDev" />
+          <img src="/JayDevLogo.png" className="w-[25%]" alt="JayDev" />
         </a>
 
         <button className="lg:hidden w-[8%] m-6" onClick={toggleNavigation}>
