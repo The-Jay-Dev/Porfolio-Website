@@ -1,21 +1,8 @@
 import React from "react";
-
-export function updateMenuIcon(openNavigation) {
-  const menuIcon = document.getElementById("menu");
-  const closeIcon = document.getElementById("close");
-
-  if (openNavigation) {
-    menuIcon.classList.add("hidden");
-    closeIcon.classList.remove("hidden");
-  } else {
-    menuIcon.classList.remove("hidden");
-    closeIcon.classList.add("hidden");
-  }
-}
-
-const MenuSvg = () => {
+export const updateMenuIcon = () => {};
+const MenuSvg = ({ openNavigation }) => {
   return (
-    <div className="hover:scale-[105%]">
+    <div className="hover:scale-[105%] ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -23,7 +10,7 @@ const MenuSvg = () => {
         strokeWidth="1.5"
         stroke="currentColor"
         id="menu"
-        className={`size-6 `}
+        className={`${openNavigation ? "hidden" : ""}`}
       >
         <path
           strokeLinecap="round"
@@ -38,7 +25,7 @@ const MenuSvg = () => {
         strokeWidth="1.5"
         stroke="currentColor"
         id="close"
-        className={`size-6 hidden`}
+        className={`${openNavigation ? "" : "hidden"}`}
       >
         <path
           strokeLinecap="round"
