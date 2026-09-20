@@ -3,7 +3,6 @@ import Section from "./Section";
 import ProjectContainer from "./ProjectContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
-import BioWindow from "./BioWindow";
 import { div } from "framer-motion/client";
 
 const Projects = () => {

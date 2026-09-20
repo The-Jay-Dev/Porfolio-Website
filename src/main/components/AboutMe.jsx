@@ -3,8 +3,9 @@ import Section from "./Section";
 import SkillContainer from "./SkillContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
-import BioWindow from "./BioWindow";
 import { useScramble } from "use-scramble";
+import Carousel from "./Carousel";
+import { slides } from "../../constants/aboutMeCarouselData.json";
 
 const AboutMe = () => {
   const [bioText, setBioText] = useState("");
@@ -21,7 +22,7 @@ const AboutMe = () => {
     if (window.scrollY >= sectionTop - 600) {
       console.log("SCROLL");
       window.removeEventListener("scroll", handleScroll);
-      setBioText(`I'm Jadon, a passionate software developer`);
+      setBioText(`Who am I?`);
     }
   };
 
@@ -40,10 +41,10 @@ const AboutMe = () => {
           id="aboutMe"
           className="xl:gap-24 flex justify-center h-screen items-center w-full md:w-[90%] xl:w-[90%] z-5"
         >
-          <div className="xl:block hidden w-full ">
-            <img
-              src="/DeskSetupPfp.jpg"
-              className="object-fill hidden w-full h-full md:block pt-48 pb-48 rounded"
+          <div className="xl:block hidden w-full h-[50%]">
+            <Carousel
+              slides={slides}
+              className="hidden w-full h-full md:block pt-48 pb-48 rounded"
             />
           </div>
 
@@ -67,11 +68,10 @@ const AboutMe = () => {
               viewport={{ once: true, amount: 0 }}
             >
               <p className="text-center text-[1.1rem] sm:text-2xl! sm:text-center  font-secondary  md:text-[1.8rem]! xl:text-[1.1rem]! mt-7  text-white/90 text-pretty w-[30ch] sm:w-[40ch] lg:w-[50ch] xl:w-[60ch] font-light ">
-                I’m Jadon (Jay), a self-taught software developer who enjoys
-                transforming ideas into stunning, modern applications that blend
-                creativity with clean code. I specialize in C++, Javascript and
-                Qt development, building everything from engaging video games to
-                innovative desktop apps. Recently, I've been developing{" "}
+                I’m a junior computer science student who uses technology to
+                improve the content creation and educational spaces, as well as
+                experiment with fun and exciting ideas. My favorite project
+                right now is{" "}
                 <a
                   href="/projectRebirth"
                   rel="noopener noreferrer"
@@ -79,8 +79,10 @@ const AboutMe = () => {
                 >
                   Rebirth
                 </a>
-                , a rhythm game build entirely with the Qt framework, fueling my
-                ever-growing passion for music and programming.
+                , a rhythm game based around the concept of game state
+                alternation. Outside of programming, art, music, and content
+                creation are my guilty pleasures, and I integrate them into my
+                works whenever the opportunity presents itself.
               </p>
             </motion.div>
           </div>

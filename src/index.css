@@ -43,6 +43,25 @@ largerH1 {
   scroll-margin-top: 100px;
 }
 
+.arrow {
+  @apply absolute w-8 h-8 text-white hover:scale-[110%] transition duration-200;
+}
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicator {
+  @apply bg-white mr-1.5 ml-1.5 h-2 w-2 rounded-full border-none;
+}
+
+.indicator-container {
+  @apply flex absolute bottom-4 right-1/2;
+}
+
 .glow {
   box-shadow: 0 0 60px #ffffff;
 }
