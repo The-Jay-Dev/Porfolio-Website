@@ -11,7 +11,7 @@ const Projects = () => {
       id="projects"
       className=" relative overflow-hidden flex flex-col h-fit items-center justify-center pt-16 bg-home-bg-primary bg-cover"
     >
-      <h1 className="text-home-text-primary mt-16 text-center xl:text-start tracking-wider font-secondary text-5xl font-bold! z-10">
+      <h1 className="text-home-text-primary mt-16 text-center xl:text-start md:tracking-wider font-secondary text-9xl w-[16ch] md:w-fit md:text-5xl font-bold! z-10">
         What I've been working on lately...
       </h1>
 

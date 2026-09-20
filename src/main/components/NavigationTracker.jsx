@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { homeNavigation } from "../../constants/PrimaryNavigation";
+import { homeNav } from "../../constants/PrimaryNavigation";
 
 const NavigationTracker = ({ cursor }) => {
   return (
@@ -13,7 +13,7 @@ const NavigationTracker = ({ cursor }) => {
         <div
           className={` w-32 h-full flex flex-col justify-center items-center z-1 `}
         >
-          {homeNavigation.map((item, id) => {
+          {homeNav.map((item, id) => {
             return (
               <div
                 key={id}

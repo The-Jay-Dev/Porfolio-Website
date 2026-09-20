@@ -1,4 +1,4 @@
-import { homeNavigation } from "../../constants/PrimaryNavigation.js";
+import { homeNav } from "../../constants/PrimaryNavigation.js";
 import { useLocation } from "react-router-dom";
 import MenuSvg from "../../constants/MenuSvg";
 import { useEffect, useState } from "react";
@@ -77,7 +77,7 @@ const Header = () => {
             <img src="/JayDevLogo.png" className="lg:w-[25%]" alt="JayDev" />
           </a>
         </div>
-        {homeNavigation.map((item) => (
+        {homeNav.map((item) => (
           <a
             key={item.id}
             href={item.url}
