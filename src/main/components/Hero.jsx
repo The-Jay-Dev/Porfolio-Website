@@ -5,7 +5,7 @@ import SocialsGroup from "./SocialsGroup";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../AnimationStates";
 import NavigationTracker from "./NavigationTracker";
-import { homeNav } from "../../constants/PrimaryNavigation";
+import { homeNavigation } from "../../constants/PrimaryNavigation";
 import InfoPopup from "./InfoPopup";
 import DownloadResumeButton from "./DownloadResumeButton";
 import { useScramble } from "use-scramble";
@@ -58,7 +58,7 @@ const Hero = () => {
     subtitleCursor++;
   };
 
-  const NAVIGATION_LOCATION = homeNav.reduce(
+  const NAVIGATION_LOCATION = homeNavigation.reduce(
     (accumulate, destination) => ({
       ...accumulate,
       [destination.title]: destination.index,
