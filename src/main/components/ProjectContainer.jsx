@@ -18,7 +18,7 @@ const ProjectContainer = ({
     <Tilt perspective={1500}>
       <button
         onClick={() => (window.location.href = btnUrl)}
-        className={`${extraClassNames} container hover:cursor-pointer relative h-48 lg:h-96 w-full overflow-hidden`}
+        className={`${extraClassNames} container hover:cursor-pointer relative h-48 lg:h-96 w-full overflow-hidden rounded-2xl`}
       >
         <motion.div
           variants={fadeIn(0)}

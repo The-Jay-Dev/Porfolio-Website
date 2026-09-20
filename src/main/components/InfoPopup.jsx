@@ -5,13 +5,13 @@ import { useScramble } from "use-scramble";
 const InfoPopup = ({ beginIntroAnimation, largeScreen }) => {
   const [enablelockScroll, setEnableLockScroll] = useState(true);
   useEffect(() => {
-    // if (enablelockScroll && largeScreen) {
-    //   console.log("STARTED");
-    //   document.documentElement.scrollTop = 0;
-    //   document.body.scrollTop = 0;
-    //   document.body.style.overflow = "hidden";
-    //   setEnableLockScroll(false);
-    // }
+    if (enablelockScroll && largeScreen) {
+      console.log("STARTED");
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.body.style.overflow = "hidden";
+      setEnableLockScroll(false);
+    }
   }, [enablelockScroll, largeScreen]);
   const { ref: bioScrambleRef, replay: replayBioScamble } = useScramble({
     onAnimationEnd: beginIntroAnimation,

@@ -4,14 +4,12 @@ const DownloadResumeButton = () => {
   // const resume = "/JadonMResume.pdf";
   function downloadResume(url) {
     const fileName = "Jadon Montgomery 2026 Resume";
-    console.log(fileName);
     const aTag = document.createElement("a");
     aTag.href = resume;
     aTag.setAttribute("download", fileName);
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
-    console.log("CLICK");
   }
   return (
     <button

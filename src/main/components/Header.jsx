@@ -29,9 +29,14 @@ const Header = () => {
   };
 
   useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 768) {
-        console.log("SMALL SCREEN");
         setSmallScreen(true);
       } else {
         setSmallScreen(false);

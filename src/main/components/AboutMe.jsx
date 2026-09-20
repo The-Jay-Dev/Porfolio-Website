@@ -20,7 +20,6 @@ const AboutMe = () => {
       document.querySelector("#aboutMe").getBoundingClientRect().top +
       window.scrollY;
     if (window.scrollY >= sectionTop - 600) {
-      console.log("SCROLL");
       window.removeEventListener("scroll", handleScroll);
       setBioText(`Who am I?`);
     }

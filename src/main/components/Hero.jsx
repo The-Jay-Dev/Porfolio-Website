@@ -24,11 +24,11 @@ const Hero = () => {
   let subtitleCursor = 0;
 
   useEffect(() => {
-    //setLargeScreen(window.innerWidth >= 1024);
+    setLargeScreen(window.innerWidth >= 1024);
 
-    // if (!(window.innerWidth >= 1024)) {
-    setIsAnimating(true);
-    // }
+    if (!(window.innerWidth >= 1024)) {
+      setIsAnimating(true);
+    }
   });
 
   const { ref: refSubtitle, replay: replaySubtitle } = useScramble({
@@ -48,12 +48,6 @@ const Hero = () => {
   };
 
   const playSubtitle = () => {
-    console.log(
-      subtitleCursor > subtitleList.length - 1,
-      subtitleCursor,
-      subtitleList[subtitleCursor],
-    );
-
     if (subtitleCursor > subtitleList.length - 1) {
       subtitleCursor = 0;
       setSubtitleText(subtitleList[subtitleCursor]);
@@ -82,7 +76,6 @@ const Hero = () => {
     const skillsSectionTop =
       document.querySelector("#skills").getBoundingClientRect().top +
       window.scrollY;
-    console.log(cursor);
 
     if (window.scrollY >= projectSectionTop - navigationOffsetY) {
       setCursor(1);

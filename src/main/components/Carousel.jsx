@@ -26,7 +26,7 @@ const Carousel = ({ slides }) => {
     }
   }
   return (
-    <div className="relative overflow-hidden flex justify-start items-center w-full h-full  hover:drop-shadow-sm hover:shadow-white transition hover:scale-[101%]">
+    <div className="relative overflow-hidden flex justify-start items-center w-full h-full  hover:drop-shadow-sm hover:shadow-white transition hover:scale-[100.8%]">
       <BsArrowLeftCircleFill
         className="arrow arrow-left cursor-pointer z-20"
         onClick={prevSlide}
