@@ -1,4 +1,4 @@
-export const homeNav = [
+export const homeNavigation = [
   {
     id: 0,
     title: "Home",
